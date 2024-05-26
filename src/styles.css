@@ -1,68 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
-
-h1{
-    color: blueblackviolet;
-    text-align: center;
-}
-h2{
-    text-align: center;
-}
-p{
-    color: green;
-    text-align: center;
+/* Global Styles */
+html, body {
+    height: 100%;
 }
 
-.contact{
-    text-align: center;
-}
-span{
-    text-align: center;
-    color: red;
-}
-img{
-    width: 200px; height: auto;
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    padding: 20px; /* Optional: Adjust padding for the body */
+    position: relative; /* Ensure body is the reference for absolute positioning */
 }
 
-
-
-
-
-
+/* Intro Section Styles */
 #intro-section {
-    background-color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-    margin: 50px auto;
+    background-color: #ffffff;
+    text-align: left; /* Align text to the left */
+    padding: 0px; /* Adjusted padding for left alignment */
+    margin: 20px 0; /* Adjusted margin for alignment */
     max-width: 600px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
     font-family: Arial, sans-serif;
     color: #333;
 }
 
+.header-container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+}
+
 #intro-section h1 {
-    font-size: 2.5em;
-    margin: 0 0 10px;
+    font-size: 2em;
+    margin: 0; /* Removed px unit */
     color: #333;
+}
+
+#project-header {
+    position: absolute; /* Absolute positioning */
+    padding: 10;
+    top: 40px; /* Adjust based on desired position */
+    right: 20px; /* Adjust based on desired position */
+    text-align: right;
 }
 
 #intro-section h2 {
     font-size: 1.5em;
-    margin: 0 0 20px;
-    color: #666;
+    margin: 10px 0; /* Space between h1 and h2 */
+    color: #ff0000;
 }
 
 #intro-section p {
     font-size: 1.2em;
     margin: 0;
-    color: #555;
+    color: #000000;
 }
 
+/* Footer Section Styles */
 #f-section {
     display: block;
     text-align: center;
@@ -71,6 +61,7 @@ img{
     font-size: 1.2em;
     color: #333;
 }
+
 .contact {
     background-color: #f9f9f9;
     border-radius: 5px;
@@ -125,7 +116,7 @@ img{
     color: #666;
 }
 
-/* Style for the heading */
+/* Portfolio Section Styles */
 #portfolio-heading {
     text-align: center;
     font-size: 2em;
@@ -133,18 +124,15 @@ img{
     margin-bottom: 20px;
 }
 
-/* Style for the list */
 #portfolio-list {
     list-style-type: none;
     padding-left: 0;
 }
 
-/* Style for list items */
 #portfolio-list li {
     margin-bottom: 10px;
 }
 
-/* Style for individual list items */
 #item1,
 #item2,
 #item3,
@@ -154,4 +142,3 @@ img{
     color: #666; /* Light gray color */
     margin-left: 20px;
 }
-
