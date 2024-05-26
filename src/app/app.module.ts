@@ -6,17 +6,17 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsComponent } from './Menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import {MaterialModule} from './modules/material-ui.module';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
-import { ProjectsTitleComponent } from './projects-title/projects-title.component';
-import { ProjectsSubtitleComponent } from './projects-subtitle/projects-subtitle.component';
-import { ProjectsImageComponent } from './projects-image/projects-image.component';
-import { ProjectsResumeComponent } from './projects-resume/projects-resume.component';
-import { ProjectsHobbiesComponent } from './projects-hobbies/projects-hobbies.component';
+import { ProjectsTitleComponent } from './Menu/menu-about/menu-aboutcomponent';
+import { ProjectsSubtitleComponent } from './Menu/menu-work/menu-work.component';
+import { ProjectsImageComponent } from './Menu/menu-projects/menu-projects.component';
+import { ProjectsResumeComponent } from './Menu/menu-resume/projects-resume.component';
+import { ProjectsHobbiesComponent } from './Menu/menu-contact/menu-contact.component';
 
 @NgModule({
   declarations: [

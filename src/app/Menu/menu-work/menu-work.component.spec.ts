@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectsSubtitleComponent } from './projects-subtitle.component';
+import { ProjectsSubtitleComponent } from './menu-work.component';
 
 describe('ProjectsSubtitleComponent', () => {
   let component: ProjectsSubtitleComponent;

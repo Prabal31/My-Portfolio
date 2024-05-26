@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectsTitleComponent } from './projects-title.component';
+import { ProjectsTitleComponent } from './menu-aboutcomponent';
 
 describe('ProjectsTitleComponent', () => {
   let component: ProjectsTitleComponent;
