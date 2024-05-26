@@ -52,92 +52,52 @@ body {
 }
 
 /* Footer Section Styles */
-#f-section {
-    display: block;
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     text-align: center;
-    margin: 20px auto;
-    max-width: 600px;
     font-size: 1.2em;
-    color: #333;
+    color: #000000;
+    background-color: #ffffff; /* Optional: Add a background color */
+    padding: 20px 0; /* Optional: Add padding for better visibility */
 }
 
-.contact {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
+/* About me section */
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items in the center vertically */
 }
 
-.contact h3 {
-    color: #333;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.about-me-content {
+    display: flex;
+    max-width: 80000px; /* Adjust maximum width as needed */
 }
 
-.contact p {
-    color: #666;
-    font-size: 1.2em;
+.about-me-text {
+
+    flex: 2;
+    padding: 100px;
+    font-size: 20px;
 }
 
-.contact ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
+.about-me-photo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align the image to the left */
+    align-items: center; /* Align vertically */
 }
 
-.contact li {
-    margin-bottom: 5px;
+.about-me-photo img {
+    align-items: left;
+    width: 400px; /* Adjust the size of the image */
+    height: 400px; /* Adjust the size of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-left: 20px; /* Add margin for spacing */
 }
 
-.contact li a {
-    text-decoration: none;
-    color: #0077b5; /* LinkedIn Blue */
-}
 
-.contact li a:hover {
-    text-decoration: underline;
-}
 
-#intro {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-#heading {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#description {
-    font-size: 1.2em;
-    color: #666;
-}
-
-/* Portfolio Section Styles */
-#portfolio-heading {
-    text-align: center;
-    font-size: 2em;
-    color: #333; /* Dark gray color */
-    margin-bottom: 20px;
-}
-
-#portfolio-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#portfolio-list li {
-    margin-bottom: 10px;
-}
-
-#item1,
-#item2,
-#item3,
-#item4,
-#item5 {
-    font-size: 1.1em;
-    color: #666; /* Light gray color */
-    margin-left: 20px;
-}
