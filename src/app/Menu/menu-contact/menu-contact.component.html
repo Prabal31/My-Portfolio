@@ -1,18 +1,26 @@
-<div class="contact-me" id="contact">
-    <h2>Contact Me</h2>
-</div>
-
-
-<div>
-  <div>
-      <fa-icon [icon]="myLinkedin"> </fa-icon>
+<div class="main-div">
+  <div class="contact-me" id="contact">
+      <h2>Contact Me</h2>
   </div>
 
-  <div>
-    <fa-icon [icon]="myGithub"> </fa-icon>
-  </div>
+  <div class="contact-icons">
+      <div class="fa-icons">
+          <a href="https://www.linkedin.com/in/prabal-manchanda/" target="_blank">
+              <button>
+                  <fa-icon [icon]="myLinkedin" style="color: #0082ca;"></fa-icon>
+              </button>
+          </a>
+          <a href="https://github.com/Prabal31" target="_blank">
+              <button>
+                  <fa-icon [icon]="myGithub" style="color: #333333;"></fa-icon>
+              </button>
+          </a>
+      </div>
 
-  <div>
-    <span class="material-icons" href="#about">mail</span>
-    
+      <a href="mailto:manchapr@sheridancollege.ca" target="_blank">
+          <button>
+              <span class="material-icons" style="color: #6dbbe6;">email</span>
+          </button>
+      </a>
+  </div>
 </div>

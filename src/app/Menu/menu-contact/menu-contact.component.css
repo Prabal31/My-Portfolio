@@ -1,0 +1,40 @@
+.main-div {
+  background-color: rgb(213, 209, 209);
+}
+
+.contact-me {
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons button {
+  background: none;
+  border: none; /* Remove button border */
+  font-size: 4em;
+}
+
+.contact-icons .fa-icons {
+  display: flex;
+  font-size: large;
+   /* Adjust spacing between the icon groups */
+}
+
+.contact-icons .fa-icons button {
+  margin-right: 30px; /* Adjust spacing between the buttons */
+}
+
+.material-icons {
+  padding-top: 28px;
+  font-size: 1.4em; /* Adjust icon size */
+  width: 60px; /* Set width */
+  height: 60px; /* Set height */
+  line-height: 60px; /* Center icon vertically */
+  text-align: center; /* Center icon horizontally */
+  border-radius: 50%; /* Make it circular */
+  background-color: rgb(213, 209, 209); /* Background color */
+}
