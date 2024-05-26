@@ -1,8 +1,15 @@
-<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" [ngStyle]="{textAlign: 'center'}">
+<mat-tab-group mat-stretch-tabs class="menu-navbar" [ngStyle]="{textAlign: 'center'}">
     <mat-tab>
         <ng-template mat-tab-label>
-            <span class="material-icons">info</span>
-            About
+            <span class="material-icons" href="#home">home</span>
+            <a href="#home">Home</a>
+        </ng-template>
+       
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <span class="material-icons" href="#about">info</span>
+            <a href="#about">About</a>
         </ng-template>
     </mat-tab>
     <mat-tab>
@@ -20,13 +27,7 @@
         
     </mat-tab>
 
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <span class="material-icons">keyboard_arrow_down</span>
-            Resume
-        </ng-template>
-       
-    </mat-tab>
+    
     <mat-tab>
         <ng-template mat-tab-label>
             <span class="material-icons">mail</span>

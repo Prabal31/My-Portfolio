@@ -1,0 +1,21 @@
+.div-main-id {
+    text-align: center;
+    width: auto;
+    height: 800px;
+    padding: 90px; /* Add space around the element */
+}
+
+.div-main-id h1 {
+    font-size: 130px;
+    color: rgb(114, 114, 250);
+}
+
+.div-main-id button {
+    width: 24%;
+    height: 10%;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(114, 114, 250);
+    border-color: rgb(114, 114, 250);
+}
