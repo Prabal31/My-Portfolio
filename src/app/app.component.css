@@ -9,6 +9,9 @@
     font-size: 130px;
     color: rgb(114, 114, 250);
 }
+.div-main-id a {
+    text-decoration: none;
+}
 
 .div-main-id button {
     width: 24%;

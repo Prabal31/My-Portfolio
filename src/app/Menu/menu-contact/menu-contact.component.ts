@@ -5,7 +5,7 @@ import { faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons';
   templateUrl: './menu-contact.component.html',
   styleUrls: ['./menu-contact.component.css']
 })
-export class ProjectsHobbiesComponent {
+export class MenuContactComponent {
   myLinkedin=faLinkedin;
   myGithub=faGithub;
 

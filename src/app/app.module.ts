@@ -5,29 +5,29 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
-import { ProjectsComponent } from './Menu/menu.component';
+import { MenuComponent } from './Menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import {MaterialModule} from './modules/material-ui.module';
 import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
-import { ProjectsTitleComponent } from './Menu/menu-about/menu-aboutcomponent';
-import { ProjectsSubtitleComponent } from './Menu/menu-work/menu-work.component';
-import { ProjectsImageComponent } from './Menu/menu-projects/menu-projects.component';
-import { ProjectsResumeComponent } from './Menu/menu-resume/projects-resume.component';
-import { ProjectsHobbiesComponent } from './Menu/menu-contact/menu-contact.component';
+import { MenuAboutComponent } from './Menu/menu-about/menu-aboutcomponent';
+import { MenuWorkComponent } from './Menu/menu-work/menu-work.component';
+import { MenuProjectsComponent } from './Menu/menu-projects/menu-projects.component';
+import { MenuContactComponent } from './Menu/menu-contact/menu-contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectsVirtualBookStoreComponent } from './Menu/menu-projects/projects-virtual-book-store/projects-virtual-book-store.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    ProjectsComponent,
+    MenuComponent,
     HeaderComponent,
-    ProjectsTitleComponent,
-    ProjectsSubtitleComponent,
-    ProjectsImageComponent,
-    ProjectsResumeComponent,
-    ProjectsHobbiesComponent
+    MenuAboutComponent,
+    MenuWorkComponent,
+    MenuProjectsComponent,
+    MenuContactComponent,
+    ProjectsVirtualBookStoreComponent
   ],
   imports: [
     BrowserModule,

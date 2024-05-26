@@ -1,8 +1,9 @@
 .head{
     background-color: rgb(169, 169, 245);
-    width: 97.85%;
+    width: 97.6%;
     height: 15%;
     position: fixed;
+    border-radius: 8px;
     
 }
 

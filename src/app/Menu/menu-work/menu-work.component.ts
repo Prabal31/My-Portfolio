@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-projects-work',
+  selector: 'app-menu-work',
   templateUrl: './menu-work.component.html',
   styleUrls: ['./menu-work.component.css']
 })
-export class ProjectsSubtitleComponent {
+export class MenuWorkComponent {
 
 }
