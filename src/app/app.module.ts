@@ -15,6 +15,7 @@ import { ProjectsSubtitleComponent } from './Menu/menu-work/menu-work.component'
 import { ProjectsImageComponent } from './Menu/menu-projects/menu-projects.component';
 import { ProjectsResumeComponent } from './Menu/menu-resume/projects-resume.component';
 import { ProjectsHobbiesComponent } from './Menu/menu-contact/menu-contact.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ProjectsHobbiesComponent } from './Menu/menu-contact/menu-contact.compo
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
 
   ],
   providers: [],
