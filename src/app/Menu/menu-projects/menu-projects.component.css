@@ -1,69 +1,93 @@
 .projects {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 420px;
     padding-top: 200px;
-    width: 100px;
-    max-width: 1000%;
-    align-items: center; /* Center horizontally */
-    gap: 20px;
 }
 
 .projects h2 {
-    margin-top: 0; /* Remove default margin */
+    padding-top: 10px;
+    color: #0056b3;
     text-align: center;
-    width: 1000px;
+    font-size: 3em;
+}
+
+.project-slideshow {
+    display: flex;
+    transition: transform 0.5s ease; /* Add transition for smooth sliding */
+    overflow: hidden; /* Hide overflow content */
 }
 
 .project {
+    flex: 0 0 100%; /* Each project takes full width of the container */
     display: flex;
-    width: 100%;
-    max-width: 600px;
+    align-items: center; /* Center vertically */
 }
 
+.project-image {
+    flex: 0 0 auto;
+    width: 550px; /* Ensure image fills its container */
+    height: 350px; /* Ensure image fills its container */
+}
 
 .project-image img {
-    width: 500px; /* Adjust the width of the image */
-    height: 500px;
-    height: auto; /* Maintain aspect ratio */
+    margin-top: 35px;
+    width: 100%; /* Ensure image fills its container */
     border-radius: 30px;
 }
 
 .project-info {
-    margin-left: 100px;
     flex-grow: 1;
-    width: 1000px;
-    padding-left: 20px; /* Adjust padding left */
+    margin-left: 200px;
+}
+
+.project-info h3,
+.project-info .tech,
+.project-info .details {
+    width: 100%; /* Ensure text fills its container */
 }
 
 .project h3 {
-    font-size: 1.5em;
+    padding-top: 1px;
+    font-size: 1.9em;
     margin-bottom: 10px;
     color: #0056b3;
 }
 
 .project .tech {
-    font-size: 1.1em;
+    font-size: 1.7em;
     color: #666;
 }
 
 .project .details {
-    font-size: 1em;
+    font-size: 1.3em;
     color: #444;
     margin-bottom: 10px;
 }
 
 .github-link {
-    display: inline-block;
-    margin-top: 10px;
+    font-size: 50px;
+    border-radius: 50px;
 }
 
-.github-link img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 50%;
 }
 
-.github-link:hover img {
-    transform: scale(1.1);
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
 }

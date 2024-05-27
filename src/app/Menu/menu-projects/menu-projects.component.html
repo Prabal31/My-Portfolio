@@ -1,18 +1,70 @@
 <div class="projects" id="projects">
     <h2>My Projects</h2>
-    <div class="project">
-        <div class="project-image">
-            <img src="/assets/images/R.png" alt="Portfolio Maker Logo">
+    <div class="arrow left-arrow" onclick="showPreviousProject()">&#10094;</div>
+    <div class="project-slideshow">
+        <div class="project">
+            <div class="project-image">
+                <img src="/assets/images/R.png" alt="Portfolio Builder Logo">
+            </div>
+            <div class="project-info">
+                <h3>Portfolio Builder</h3>
+                <p class="tech">Technologies: Node.js, Azure, OpenAI API</p>
+                <p class="details">In the world of Portfolio Builder, Node.js and OpenAI's GPT-4 collaborate to weave personalized portfolio tales. With HTML, CSS, and JavaScript, we've fashioned an intuitive interface, while battling bugs to ensure a seamless user experience. Join us on this thrilling journey, where your portfolio becomes a captivating narrative, and comprehensive documentation lights the path to triumph.</p>
+                <a href="https://github.com/Prabal31/Portfolio-Builder.git" class="github-link" title="View on GitHub" target="_blank">
+                    <i class="fab fa-github" style="color: #333333;"></i>
+                </a> 
+            </div>
         </div>
-        <div class="project-info">
-            <h3>Portfolio Maker</h3>
-            <p class="tech">Technologies: Node.js, Azure, OpenAI API</p>
-            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut justo quis leo gravida eleifend.</p>
-            <a href="#" class="github-link" title="View on GitHub">
-                <img src="github-icon.png" alt="GitHub Icon">
-            </a>
+        <div class="project">
+            <div class="project-image">
+                <img src="/assets/images/R.png" alt="Another Project Logo">
+            </div>
+            <div class="project-info">
+                <h3>Another Project</h3>
+                <p class="tech">Technologies: React, AWS, OpenAI API</p>
+                <p class="details">This project leverages the power of React and AWS to create a dynamic and scalable application. The integration with OpenAI's API brings advanced AI capabilities to the forefront.</p>
+                <a href="https://github.com/Prabal31/Another-Project.git" class="github-link" title="View on GitHub" target="_blank">
+                    <i class="fab fa-github" style="color: #333333;"></i>
+                </a> 
+            </div>
         </div>
-        
+        <div class="project">
+            <div class="project-image">
+                <img src="/assets/images/R.png" alt="Yet Another Project Logo">
+            </div>
+            <div class="project-info">
+                <h3>Yet Another Project</h3>
+                <p class="tech">Technologies: Python, Flask, Heroku</p>
+                <p class="details">This project demonstrates the power of Python and Flask for building robust web applications. Deployed on Heroku, it showcases seamless integration and deployment capabilities.</p>
+                <a href="https://github.com/Prabal31/Yet-Another-Project.git" class="github-link" title="View on GitHub" target="_blank">
+                    <i class="fab fa-github" style="color: #333333;"></i>
+                </a> 
+            </div>
+        </div>
     </div>
-    <!-- Repeat the same structure for other projects -->
+    <div class="arrow right-arrow" onclick="showNextProject()">&#10095;</div>
 </div>
+<script>
+    const projectContainer = document.querySelector('.project-slideshow');
+const projects = document.querySelectorAll('.project');
+let currentIndex = 0;
+
+function showNextProject() {
+    currentIndex = (currentIndex + 1) % projects.length;
+    updateProjectPosition();
+}
+
+function showPreviousProject() {
+    currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+    updateProjectPosition();
+}
+
+function updateProjectPosition() {
+    const offset = -currentIndex * projects[0].offsetWidth;
+    projectContainer.style.transform = `translateX(${offset}px)`;
+}
+
+// Automatically show next project every 5 seconds
+setInterval(showNextProject, 5000);
+
+</script>
