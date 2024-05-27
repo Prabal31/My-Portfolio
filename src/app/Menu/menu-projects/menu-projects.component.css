@@ -1,12 +1,12 @@
 .projects {
     display: flex;
     flex-direction: column;
-    margin-top: 420px;
-    padding-top: 200px;
+    padding-top: 160px;
+    max-width: 10000px; /* Set max width for better responsiveness */
 }
 
 .projects h2 {
-    padding-top: 10px;
+    padding-top: 20px;
     color: #0056b3;
     text-align: center;
     font-size: 3em;
@@ -26,14 +26,16 @@
 
 .project-image {
     flex: 0 0 auto;
-    width: 550px; /* Ensure image fills its container */
+    width: 500px; /* Ensure image fills its container */
     height: 350px; /* Ensure image fills its container */
+    
 }
 
 .project-image img {
     margin-top: 35px;
     width: 100%; /* Ensure image fills its container */
     border-radius: 30px;
+    border: 5px solid black;
 }
 
 .project-info {
@@ -68,26 +70,4 @@
 .github-link {
     font-size: 50px;
     border-radius: 50px;
-}
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 3em;
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
 }
