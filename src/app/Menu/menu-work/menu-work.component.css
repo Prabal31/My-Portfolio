@@ -29,6 +29,9 @@
     align-items: center;
     margin-bottom: 20px;
 }
+.job-header a{
+   text-decoration: none;
+}
 
 .company-logo {
     width: 250px;
