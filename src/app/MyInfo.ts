@@ -1,0 +1,1 @@
+export class Personal { first!: string; last!: string;}
