@@ -1,38 +1,36 @@
-<mat-tab-group mat-stretch-tabs class="menu-navbar" [ngStyle]="{textAlign: 'center'}">
-    <mat-tab>
+<mat-tab-group mat-stretch-tabs class="menu-navbar" [ngStyle]="{textAlign: 'center'}" (selectedTabChange)="tabChanged($event)">
+    <mat-tab label="Home">
         <ng-template mat-tab-label>
-            <span class="material-icons" href="#home">home</span>
-            <a href="#home">Home</a>
+            <span class="material-icons">home</span>
+            <a>Home</a>
         </ng-template>
-       
-    </mat-tab>
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <span class="material-icons" href="#about">info</span>
-            <a href="#about">About</a>
-        </ng-template>
-    </mat-tab>
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <span class="material-icons" href="#work">work</span>
-            <a href="#work">Work</a>
-        </ng-template>
-      
-    </mat-tab>
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <span class="material-icons" href="#projects">terminal</span>
-            <a href="#projects">Projects</a>
-        </ng-template>
-        
     </mat-tab>
 
-    
-    <mat-tab>
+    <mat-tab label="About">
+        <ng-template mat-tab-label>
+            <span class="material-icons">info</span>
+            <a>About</a>
+        </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Work">
+        <ng-template mat-tab-label>
+            <span class="material-icons">work</span>
+            <a>Work</a>
+        </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Projects">
+        <ng-template mat-tab-label>
+            <span class="material-icons">terminal</span>
+            <a>Projects</a>
+        </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Contact">
         <ng-template mat-tab-label>
             <span class="material-icons">mail</span>
-            <a href="#contact">Contact</a>
+            <a>Contact</a>
         </ng-template>
-    
     </mat-tab>
 </mat-tab-group>
