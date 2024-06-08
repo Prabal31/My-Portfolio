@@ -1,6 +1,5 @@
 .main-div {
   padding-top: 10px;
-  background-color: rgb(213, 209, 209);
   border-radius: 8px;
   margin-top: 300px;
 }
@@ -46,5 +45,4 @@
   line-height: 60px; /* Center icon vertically */
   text-align: center; /* Center icon horizontally */
   border-radius: 50%; /* Make it circular */
-  background-color: rgb(213, 209, 209); /* Background color */
 }

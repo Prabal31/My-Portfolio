@@ -1,6 +1,4 @@
-.head{
-    background-color: rgb(169, 169, 245);
-    width: 97.6%;
+.head{    width: 97.6%;
     height: 15%;
     position: fixed;
     border-radius: 8px;
@@ -12,7 +10,7 @@
     text-align: left; /* Align text to the left */
     max-width: 600px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #ffffff;
 }
 
 .header-container {
@@ -29,6 +27,7 @@
     margin: 0; /* Removed px unit */
 }
 
+
 #project-header {
     
     position: fixed; /* Absolute positioning */
@@ -41,12 +40,10 @@
     padding-left: 10px;
     font-size: 1.5em;
     margin: 10px 0; /* Space between h1 and h2 */
-    color: rgb(114, 114, 250);
 }
 
 #intro-section p {
     padding-left: 10px;
     font-size: 1.2em;
     margin: 0;
-    color: #000000;
 }
