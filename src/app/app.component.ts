@@ -9,5 +9,5 @@ import {Personal, Links} from "./MyInfo";
 export class AppComponent {
   title = 'portfolio';
   mydata:Personal = {first:"Prabal",last:"Manchanda"};
-  link:Links = {Linkedin:"https://www.linkedin.com/in/prabal-manchanda/",GitHub:"https://github.com/Prabal31"};
+  link:Links = {Linkedin:"https://www.linkedin.com/in/prabal-manchanda/",GitHub:"https://github.com/Prabal31", Email: "manchapr@sheridancollege.ca"};
 }
