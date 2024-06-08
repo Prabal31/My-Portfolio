@@ -4,6 +4,7 @@
     margin: 0 auto;
     margin-bottom: 300px;
     padding-top: 200px;
+    min-width: 100vh;
     height: 500px;
     max-width: 120000px;
     border-radius: 8px;
