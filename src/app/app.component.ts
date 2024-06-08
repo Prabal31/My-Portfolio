@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Personal} from "./MyInfo";
+import {Personal, Links} from "./MyInfo";
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,5 @@ import {Personal} from "./MyInfo";
 export class AppComponent {
   title = 'portfolio';
   mydata:Personal = {first:"Prabal",last:"Manchanda"};
+  link:Links = {Linkedin:"https://www.linkedin.com/in/prabal-manchanda/",GitHub:"https://github.com/Prabal31"};
 }

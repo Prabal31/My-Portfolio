@@ -3,7 +3,6 @@
   background-color: rgb(213, 209, 209);
   border-radius: 8px;
   margin-top: 300px;
-  
 }
 
 .contact-me {
@@ -24,12 +23,19 @@
 
 .contact-icons .fa-icons {
   display: flex;
-  font-size: large;
-   /* Adjust spacing between the icon groups */
+  font-size: large; /* Adjust spacing between the icon groups */
 }
 
 .contact-icons .fa-icons button {
   margin-right: 30px; /* Adjust spacing between the buttons */
+}
+
+.icon {
+  transition: transform 0.3s; /* Add transition for smooth hover effect */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Slightly increase the size on hover */
 }
 
 .material-icons {
