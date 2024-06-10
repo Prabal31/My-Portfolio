@@ -2,13 +2,13 @@
     <h2>My Projects</h2>
     <div class="project">
         <div class="project-image">
-            <img src="/assets/images/Portfolio_builder.png" alt="Portfolio Maker Logo">
+            <img src="{{pwork[0].image}}" alt="Portfolio Maker Logo">
         </div>
         <div class="project-info">
-            <h3>Portfolio Builder</h3>
-            <p class="tech">Technologies Used: Node.js, Azure, OpenAI API</p>
-            <p class="details">In the world of Portfolio Builder, Node.js and OpenAI's GPT-4 collaborate to weave personalized portfolio tales. With HTML, CSS, and JavaScript, we've fashioned an intuitive interface, while battling bugs to ensure a seamless user experience. Join us on this thrilling journey, where your portfolio becomes a captivating narrative, and comprehensive documentation lights the path to triumph.</p>
-            <a href="https://github.com/Prabal31/Portfolio-Builder.git" class="github-link" title="View on GitHub" target="_blank">
+            <h3>{{pwork[0].name}}</h3>
+            <p class="tech">{{pwork[0].technology_used}}</p>
+            <p class="details">{{pwork[0].details}}</p>
+            <a href="{{pwork[0].github_link}}" class="github-link" title="View on GitHub" target="_blank">
                 <fa-icon [icon]="myGithub" style="color: #333333;"></fa-icon>      
             </a> 
         </div>

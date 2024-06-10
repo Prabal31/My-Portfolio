@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { faGithub} from '@fortawesome/free-brands-svg-icons';
+import {Project} from "src/app/MyInfo";
 
 @Component({
   selector: 'app-menu-projects',
@@ -11,4 +12,6 @@ export class MenuProjectsComponent {
   myGithub=faGithub;
 
   faGithub=faGithub
+
+  @Input() pwork!: Project[];
 }

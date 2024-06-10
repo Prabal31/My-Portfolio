@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import {Personal, Links} from "./MyInfo";
+import {Personal, Links, Project} from "./MyInfo";
+import data from '../assets/data/Mydata.json';
+
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,8 @@ import {Personal, Links} from "./MyInfo";
 })
 export class AppComponent {
   title = 'portfolio';
-  mydata:Personal = {first:"Prabal",last:"Manchanda"};
-  link:Links = {Linkedin:"https://www.linkedin.com/in/prabal-manchanda/",GitHub:"https://github.com/Prabal31", Email: "manchapr@sheridancollege.ca"};
+  mydata: Personal = data.Personal;
+  link: Links = data.Links
+  project:Project[] = data.projects 
   darkMode = false;
 }
