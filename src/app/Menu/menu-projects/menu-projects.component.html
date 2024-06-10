@@ -1,43 +1,16 @@
 <div class="projects" id="projects">
     <h2>My Projects</h2>
-    <div class="project">
+    <div class="project" *ngFor="let project of pwork">
         <div class="project-image">
-            <img src="{{pwork[0].image}}" alt="Portfolio Maker Logo">
+            <img src="{{ project.image }}" alt="Portfolio Maker Logo">
         </div>
         <div class="project-info">
-            <h3>{{pwork[0].name}}</h3>
-            <p class="tech">{{pwork[0].technology_used}}</p>
-            <p class="details">{{pwork[0].details}}</p>
-            <a href="{{pwork[0].github_link}}" class="github-link" title="View on GitHub" target="_blank">
+            <h3>{{ project.name }}</h3>
+            <p class="tech">{{ project.technology_used }}</p>
+            <p class="details">{{ project.details }}</p>
+            <a href="{{ project.github_link }}" class="github-link" title="View on GitHub" target="_blank">
                 <fa-icon [icon]="myGithub" style="color: #333333;"></fa-icon>      
             </a> 
         </div>
     </div>      
-    <div class="project">
-        <div class="project-image">
-            <img src="{{pwork[1].image}}" alt="Portfolio Maker Logo">
-        </div>
-        <div class="project-info">
-            <h3>{{pwork[1].name}}</h3>
-            <p class="tech">{{pwork[1].technology_used}}</p>
-            <p class="details">{{pwork[1].details}}</p>
-            <a href="{{pwork[1].github_link}}" class="github-link" title="View on GitHub" target="_blank">
-                <fa-icon [icon]="myGithub" style="color: #333333;"></fa-icon>      
-            </a> 
-        </div>
-    </div>   
-    <div class="project">
-        <div class="project-image">
-            <img src="{{pwork[2].image}}" alt="Portfolio Maker Logo">
-        </div>
-        <div class="project-info">
-            <h3>{{pwork[2].name}}</h3>
-            <p class="tech">{{pwork[2].technology_used}}</p>
-            <p class="details">{{pwork[2].details}}</p>
-            <a href="{{pwork[2].github_link}}" class="github-link" title="View on GitHub" target="_blank">
-                <fa-icon [icon]="myGithub" style="color: #333333;"></fa-icon>      
-            </a> 
-        </div>
-        
-    </div> 
 </div>
