@@ -1,7 +1,9 @@
 {
       "Personal": {
         "first": "Prabal",
-        "last": "Manchanda"
+        "last": "Manchanda",
+        "image": "./assets/images/My_Photo.jpeg"
+
       },
       "Links": {
         "Linkedin": "https://www.linkedin.com/in/prabal-manchanda/",
