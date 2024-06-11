@@ -1,23 +1,23 @@
 <div class="experience" id="work">
     <h2>Work Experience</h2>
-    <div class="job">
-        <div class="job-header">
+    <div class="job" *ngFor="let experience of pexperience">
+        <div class="job-header" >
             
             <div>
-                <h3><a href="https://www.skillsquirrel.com/">Skill Squirrel</a></h3>
-                <p class="position">Junior Software Developer</p>
-                <p class="date">January 2024 - April 2024</p>
-            </div><a href="https://www.skillsquirrel.com/">
-                <img src="/assets/images/Skill-Squirrel-LOGO-hori-PURPLE.png" alt="Skill Squirrel Logo" class="company-logo">
+                <h3><a href="{{experience.Company_link}}">{{experience.Company_name}}</a></h3>
+                <p class="position">{{experience.Position}}</p>
+                <p class="date">{{experience.Time_frame}}</p>
+            </div><a href="{{experience.Company_link}}">
+                <img src="{{experience.Company_logo}}" alt="Skill Squirrel Logo" class="company-logo">
             </a>
             
         </div>
         <ul>
-            <li>Led research efforts to utilize new technologies, such as Node.js API and Azure Prompt Flow, to enhance Skill Squirrel's feature integration.</li>
-            <li>Collaborated within a fully remote team to develop and implement a new feature for Skill Squirrel, leveraging Node.js API and Azure Prompt Flow to streamline user interactions and enhance user experience.</li>
-            <li>Utilized Jira and GitHub for project management and version control, creating branches and making pull/push requests to ensure code integrity and collaboration.</li>
-            <li>Managed personal local development environment setup, showcasing autonomy and self-motivation in a remote work setting.</li>
-            <li>Assisted in generating, evaluating, and analyzing data and reports to ensure accuracy and consistency.</li>
+            <li>{{experience.Point1}}</li>
+            <li>{{experience.Point2}}</li>
+            <li>{{experience.Point3}}</li>
+            <li>{{experience.Point4}}</li>
+            <li>{{experience.Point5}}</li>
         </ul>
     </div>
 </div>

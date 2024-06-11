@@ -1,5 +1,5 @@
-import { Component, Input} from '@angular/core';
-import { faGithub} from '@fortawesome/free-brands-svg-icons';
+import {Component, Input} from '@angular/core';
+import {faGithub} from '@fortawesome/free-brands-svg-icons';
 import {Project} from "src/app/MyInfo";
 
 @Component({

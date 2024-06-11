@@ -3,7 +3,9 @@
         "first": "Prabal",
         "last": "Manchanda",
         "image": "./assets/images/My_Photo.jpeg",
-        "about": "Hey there! I'm Prabal Manchanda, a passionate software developer who thrives on designing and coding innovative solutions. With a love for crafting digital experiences, I bring creativity and precision to every project I undertake. Let's build something extraordinary together."
+        "occupation":"Software Developer",
+        "about": "Hey there! I'm Prabal Manchanda, a passionate software developer who thrives on designing and coding innovative solutions. With a love for crafting digital experiences, I bring creativity and precision to every project I undertake. Let's build something extraordinary together.",
+        "discription": "I design and code beautiful simple things, and I love doing it."
 
       },
       "Links": {
@@ -11,6 +13,7 @@
         "GitHub": "https://github.com/Prabal31",
         "Email": "manchapr@sheridancollege.ca"
       },
+
     "projects": [
         {
         "name": "Portfolio Builder",
@@ -32,6 +35,21 @@
         "technology_used": "PHP, JavaScript, MySQL",
         "details": "Discover a versatile Content Management System integrating PHP, JavaScript, and MySQL, tailored for seamless data management and real-time updates. Embracing industry-standard tools underscores a commitment to robust solutions and scalability. Addressing intricate challenges like real-time data updates and intuitive database interaction has refined problem-solving skills, fostering a drive for ongoing learning and industry relevancy.",
         "github_link": "https://github.com/Prabal31"
+        }
+    ],
+
+    "Experience": [
+        {
+        "Company_name": "Skill Squirrel",
+        "Position": "Junior Software Developer",
+        "Time_frame": "January 2024 - April 2024",
+        "Company_logo": "/assets/images/Skill-Squirrel-LOGO-hori-PURPLE.png",
+        "Company_link" :"https://www.skillsquirrel.com/",
+        "Point1": "Led research efforts to utilize new technologies, such as Node.js API and Azure Prompt Flow, to enhance Skill Squirrel's feature integration.",
+        "Point2": "Collaborated within a fully remote team to develop and implement a new feature for Skill Squirrel, leveraging Node.js API and Azure Prompt Flow to streamline user interactions and enhance user experience.",
+        "Point3": "Utilized Jira and GitHub for project management and version control, creating branches and making pull/push requests to ensure code integrity and collaboration.",
+        "Point4": "Managed personal local development environment setup, showcasing autonomy and self-motivation in a remote work setting.",
+        "Point5": "Assisted in generating, evaluating, and analyzing data and reports to ensure accuracy and consistency."
         }
     ]
 }

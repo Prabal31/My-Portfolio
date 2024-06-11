@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
+import {Experience} from "src/app/MyInfo";
 
 @Component({
   selector: 'app-menu-work',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-work.component.css']
 })
 export class MenuWorkComponent {
+  @Input() pexperience!: Experience[];
 
 }
