@@ -9,7 +9,7 @@ html, body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    padding: 20px; /* Optional: Adjust padding for the body */
+    padding: 0px; /* Optional: Adjust padding for the body */
     position: relative; /* Ensure body is the reference for absolute positioning */
 }
 
