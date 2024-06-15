@@ -26,6 +26,7 @@
 
 .project-image {
     flex: 0 0 auto;
+    padding-left: 20px;
     width: 500px; /* Ensure image fills its container */
     height: 350px; /* Ensure image fills its container */
     
