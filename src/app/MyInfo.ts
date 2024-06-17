@@ -3,7 +3,7 @@ export interface Personal {
     last: string; 
     image: string;
     occupation: string;
-    discription: string
+    description: string
     about: string
 }
 export interface Links {
