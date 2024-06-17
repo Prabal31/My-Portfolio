@@ -45,6 +45,7 @@
     padding: 20px; /* Add padding for spacing */
     margin-left: 20px; /* Margin between image and text */
     width: 100%; /* Ensure text fills its container */
+    text-align: left; /* Align text to the left */
 }
 
 .project-info h3,
