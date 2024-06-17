@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     padding-top: 160px;
-    max-width: 10000px; /* Set max width for better responsiveness */
+    width: 100%;
+    align-items: center; /* Center align items */
 }
 
 .projects h2 {
@@ -10,38 +11,40 @@
     color: #0056b3;
     text-align: center;
     font-size: 3em;
-}
-
-.project-slideshow {
-    display: flex;
-    transition: transform 0.5s ease; /* Add transition for smooth sliding */
-    overflow: hidden; /* Hide overflow content */
+    margin-bottom: 40px; /* Add margin for spacing */
 }
 
 .project {
-    flex: 0 0 100%; /* Each project takes full width of the container */
     display: flex;
     align-items: center; /* Center vertically */
+    flex-direction: row;
+    width: 100%; /* Stretch to full width */
+    margin-bottom: 40px; /* Space between projects */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 .project-image {
-    flex: 0 0 auto;
-    padding-left: 20px;
-    width: 500px; /* Ensure image fills its container */
-    height: 350px; /* Ensure image fills its container */
-    
+    flex: 1;
+    padding: 10px; /* Add padding for spacing */
+    width: 100%; /* Ensure image container fills width */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
 }
 
 .project-image img {
-    margin-top: 40px;
-    width: 100%; /* Ensure image fills its container */
+    width: 100%;
+    max-width: 500px; /* Limit image width for large screens */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 30px;
     border: 5px solid black;
 }
 
 .project-info {
-    flex-grow: 1;
-    margin-left: 200px;
+    flex: 2;
+    padding: 20px; /* Add padding for spacing */
+    margin-left: 20px; /* Margin between image and text */
+    width: 100%; /* Ensure text fills its container */
 }
 
 .project-info h3,
@@ -50,19 +53,18 @@
     width: 100%; /* Ensure text fills its container */
 }
 
-.project h3 {
-    padding-top: 1px;
+.project-info h3 {
     font-size: 1.9em;
     margin-bottom: 10px;
     color: #0056b3;
 }
 
-.project .tech {
+.project-info .tech {
     font-size: 1.7em;
     color: #666;
 }
 
-.project .details {
+.project-info .details {
     font-size: 1.3em;
     color: #444;
     margin-bottom: 10px;
@@ -71,4 +73,82 @@
 .github-link {
     font-size: 50px;
     border-radius: 50px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .projects h2 {
+        font-size: 2em;
+    }
+
+    .project {
+        flex-direction: column; /* Stack image and text vertically */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project-image {
+        padding: 0;
+    }
+
+    .project-image img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .project-info {
+        padding: 10px;
+        margin-left: 0;
+        text-align: center; /* Center text */
+    }
+
+    .project-info h3 {
+        font-size: 1.5em;
+    }
+
+    .project-info .tech {
+        font-size: 1.3em;
+    }
+
+    .project-info .details {
+        font-size: 1em;
+    }
+
+    .github-link {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .projects h2 {
+        font-size: 2.5em;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .project-image img {
+        max-width: 400px;
+    }
+
+    .project-info {
+        padding: 15px;
+    }
+
+    .project-info h3 {
+        font-size: 1.7em;
+    }
+
+    .project-info .tech {
+        font-size: 1.5em;
+    }
+
+    .project-info .details {
+        font-size: 1.2em;
+    }
+
+    .github-link {
+        font-size: 40px;
+    }
 }
