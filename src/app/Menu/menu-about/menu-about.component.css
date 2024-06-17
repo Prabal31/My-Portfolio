@@ -11,9 +11,10 @@
 
 .about-me-content {
     display: flex;
-    max-width: 10000px; /* Adjust maximum width as needed */
+    width: 100%; /* Stretch to the whole width */
     flex-direction: row; /* Ensure horizontal alignment */
     align-items: center; /* Center align items vertically */
+    padding: 0 20px; /* Add padding to the sides for spacing */
 }
 
 .about-me-photo {
@@ -32,10 +33,67 @@
 }
 
 .about-me-text {
-    flex: 2;
+    flex: 3; /* Increase flex value to make the text section wider */
     padding: 100px; /* Adjust padding for spacing */
     font-size: 25px;
-    max-width: 600px; /* Limit the width of the text container */
+    max-width: 100%; /* Remove width constraint */
 }
 
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+        flex-direction: column;
+        padding-top: 100px;
+        height: auto;
+    }
 
+    .about-me-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-photo {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .about-me-photo img {
+        margin-right: 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-me-text {
+        padding: 20px;
+        font-size: 18px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .about-me-container {
+        padding-top: 150px;
+        height: auto;
+    }
+
+    .about-me-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about-me-photo {
+        justify-content: center;
+    }
+
+    .about-me-photo img {
+        margin-right: 40px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-me-text {
+        padding: 50px;
+        font-size: 20px;
+        max-width: 100%; /* Ensure full width */
+    }
+}

@@ -100,36 +100,55 @@ body {
   margin-right: 5px;
 }
 
-/* Footer Section Styles */
-#footer {
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 20px 0;
-  background-color: #333;
-  color: #fff;
-}
-
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
-  #footer {
-      font-size: 1em;
-      padding: 10px 0;
+  .div-main-id {
+    padding: 20px;
+  }
+
+  .div-main-id h1 {
+    font-size: 2em;
+  }
+
+  .div-main-id button {
+    width: 80%;
+    height: auto;
+    font-size: 1em;
+  }
+
+  .theme-toggle {
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+  }
+
+  .theme-toggle h1 {
+    font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
-  #footer {
-      font-size: 1.1em;
-      padding: 15px 0;
+  .div-main-id {
+    padding: 50px;
   }
-}
 
-@media only screen and (min-width: 1201px) {
-  #footer {
-      font-size: 1.2em;
-      padding: 20px 0;
+  .div-main-id h1 {
+    font-size: 3em;
+  }
+
+  .div-main-id button {
+    width: 50%;
+    height: auto;
+    font-size: 1.5em;
+  }
+
+  .theme-toggle {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px;
+  }
+
+  .theme-toggle h1 {
+    font-size: 1.2em;
   }
 }
