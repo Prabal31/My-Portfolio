@@ -1,19 +1,18 @@
+/* General Styling */
 .experience {
     font-family: Arial, sans-serif;
     padding: 40px;
+    padding-top: 100px; /* Adjust padding top for spacing */
     margin: 0 auto;
-    margin-bottom: 500px;
-    padding-top: 200px;
-    min-width: 100vh;
-    height: 500px;
-    max-width: 120000px;
-    border-radius: 8px;
+    width: 100%; /* Stretch to full width */
+    max-width: 100%; /* Ensure it doesn't exceed viewport width */
     box-sizing: border-box;
+    text-align: center; /* Center align content */
+    margin-bottom: 80px; /* Reduce margin bottom for responsiveness */
+    border-radius: 8px;
 }
 
-
 .experience h2 {
-    text-align: center;
     font-size: 2.5em;
     margin-bottom: 40px;
     color: #0056b3;
@@ -21,22 +20,22 @@
 
 .job {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column; /* Stack job details vertically */
+    align-items: center; /* Center align items */
 }
 
 .job-header {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Space between company logo and details */
+    width: 100%; /* Ensure header spans full width */
     margin-bottom: 20px;
-}
-.job-header a{
-   text-decoration: none;
 }
 
 .company-logo {
-    width: 220px;
-    padding-left: 1000px;
-    height: 140px;
-    margin-right: 20px;
+    width: 150px; /* Adjust size of company logo */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
 }
 
@@ -44,12 +43,14 @@
     font-size: 2em;
     margin: 0;
     color: #0056b3;
+    text-align: left; /* Align company name to left */
 }
 
 .position {
     font-style: italic;
     color: #666;
     font-size: 1.2em;
+    margin-bottom: 5px; /* Adjust margin */
 }
 
 .date {
@@ -59,12 +60,43 @@
 }
 
 ul {
-    list-style-type: disc;
     margin: 0;
-    padding-left: 40px;
-    font-size: 1.2em;
+    padding-left: 20px; /* Adjust padding for bullet points */
+    font-size: 1.1em; /* Adjust font size */
+    text-align: left; /* Align text to left */
 }
 
 ul li {
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Adjust margin between list items */
+    text-align: left;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .experience {
+        padding-top: 80px; /* Adjust padding for smaller screens */
+        padding-bottom: 40px; /* Adjust padding for smaller screens */
+    }
+
+    .job-header {
+        flex-direction: column; /* Stack company logo on top in smaller screens */
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center align content */
+        text-align: center; /* Center align text */
+    }
+
+    .company-logo {
+        width: 120px; /* Adjust size of company logo for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Adjust margin between company logo and details */
+    }
+
+    .position {
+        font-size: 1em; /* Decrease font size */
+    }
+
+    ul {
+        padding-left: 20px; /* Adjust padding for bullet points */
+        font-size: 1em; /* Decrease font size */
+    }
 }
