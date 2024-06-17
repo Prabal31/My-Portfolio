@@ -22,13 +22,12 @@
     margin-bottom: 40px;
     display: flex;
     flex-direction: column; /* Stack job details vertically */
-    align-items: center; /* Center align items */
 }
 
 .job-header {
     display: flex;
-    align-items: center;
     justify-content: space-between; /* Space between company logo and details */
+    text-align: left;
     width: 100%; /* Ensure header spans full width */
     margin-bottom: 20px;
 }
@@ -51,6 +50,7 @@
     color: #666;
     font-size: 1.2em;
     margin-bottom: 5px; /* Adjust margin */
+    text-align: left;
 }
 
 .date {
@@ -68,8 +68,9 @@ ul {
 
 ul li {
     margin-bottom: 10px; /* Adjust margin between list items */
-    text-align: left;
+    text-align: left; /* Ensure text aligns left */
 }
+
 
 /* Responsive Design */
 @media only screen and (max-width: 768px) {

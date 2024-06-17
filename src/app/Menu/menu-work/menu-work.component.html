@@ -1,16 +1,15 @@
 <div class="experience" id="work">
     <h2>Work Experience</h2>
     <div class="job" *ngFor="let experience of pexperience">
-        <div class="job-header" >
-            
+        <div class="job-header">
             <div>
                 <h3><a href="{{experience.Company_link}}">{{experience.Company_name}}</a></h3>
                 <p class="position">{{experience.Position}}</p>
                 <p class="date">{{experience.Time_frame}}</p>
-            </div><a href="{{experience.Company_link}}">
+            </div>
+            <a href="{{experience.Company_link}}">
                 <img src="{{experience.Company_logo}}" alt="Skill Squirrel Logo" class="company-logo">
             </a>
-            
         </div>
         <ul>
             <li>{{experience.Point1}}</li>
