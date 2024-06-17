@@ -35,7 +35,14 @@
         "technology_used": "PHP, JavaScript, MySQL",
         "details": "Discover a versatile Content Management System integrating PHP, JavaScript, and MySQL, tailored for seamless data management and real-time updates. Embracing industry-standard tools underscores a commitment to robust solutions and scalability. Addressing intricate challenges like real-time data updates and intuitive database interaction has refined problem-solving skills, fostering a drive for ongoing learning and industry relevancy.",
         "github_link": "https://github.com/Prabal31"
-        }
+        },
+        {
+          "name": "My Portfolio",
+          "image": "/assets/images/my-portfolio.png",
+          "technology_used": "Angular, NodeJs, MongoDb",
+          "details": "This very portfolio you are exploring showcases my skills and expertise in web development, specifically utilizing Angular, NodeJs, and MongoDb to create a dynamic and responsive design. Through this project, I've honed my problem-solving skills, particularly in addressing challenges like real-time data updates and intuitive database interactions. Each aspect of this portfolio underscores my passion for continuous learning and staying relevant in the ever-evolving tech industry.",
+          "github_link": "https://github.com/Prabal31/My-Portfolio.git"
+          }
     ],
 
     "Experience": [
