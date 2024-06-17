@@ -1,102 +1,135 @@
 /* Global styles */
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-container {
+  flex: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 100vh;
+  min-height: 100vh;
+  transition: background-color 0.5s, color 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure footer is at the bottom */
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode span,
+.dark-mode li,
+.dark-mode .black-text {
+  color: #ffffff !important;
+}
+
+.dark-mode .experience {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .experience a {
+  color: #ffffff;
+}
+
+.dark-mode .company-logo {
+  filter: invert(1);
+}
+
+/* Main div styles */
+.div-main-id {
+  text-align: center;
+  padding: 90px; /* Add space around the element */
+}
+
+.div-main-id h1 {
+  font-size: 130px;
+  color: rgb(114, 114, 250);
+}
+
+.div-main-id a {
+  text-decoration: none;
+}
+
+.div-main-id button {
+  width: 24%;
+  height: 10%;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Theme toggle styles */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle h1 {
+  font-size: 1.5em;
+}
+
+.theme-toggle label {
+  display: block;
+  margin: 10px 0;
+}
+
+.theme-toggle input {
+  margin-right: 5px;
+}
+
+/* Footer Section Styles */
+#footer {
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  #footer {
+      font-size: 1em;
+      padding: 10px 0;
   }
-  
-  body {
-    display: flex;
-    flex-direction: column;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  #footer {
+      font-size: 1.1em;
+      padding: 15px 0;
   }
-  
-  .theme-container {
-    flex: 1;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    min-width: 100vh;
-    min-height: 100vh;
-    transition: background-color 0.5s, color 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensure footer is at the bottom */
+}
+
+@media only screen and (min-width: 1201px) {
+  #footer {
+      font-size: 1.2em;
+      padding: 20px 0;
   }
-  
-  /* Dark mode styles */
-  .dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-  }
-  
-  .dark-mode h2,
-  .dark-mode h3,
-  .dark-mode h4,
-  .dark-mode h5,
-  .dark-mode h6,
-  .dark-mode p,
-  .dark-mode span,
-  .dark-mode li,
-  .dark-mode .black-text {
-    color: #ffffff !important;
-  }
-  
-  .dark-mode .experience {
-    background: #1e1e1e;
-    color: #ffffff;
-  }
-  
-  .dark-mode .experience a {
-    color: #ffffff;
-  }
-  
-  .dark-mode .company-logo {
-    filter: invert(1);
-  }
-  
-  /* Main div styles */
-  .div-main-id {
-    text-align: center;
-    padding: 90px; /* Add space around the element */
-  }
-  
-  .div-main-id h1 {
-    font-size: 130px;
-    color: rgb(114, 114, 250);
-  }
-  
-  .div-main-id a {
-    text-decoration: none;
-  }
-  
-  .div-main-id button {
-    width: 24%;
-    height: 10%;
-    font-weight: bold;
-    font-size: 30px;
-  }
-  
-  /* Theme toggle styles */
-  .theme-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .theme-toggle h1 {
-    font-size: 1.5em;
-  }
-  
-  .theme-toggle label {
-    display: block;
-    margin: 10px 0;
-  }
-  
-  .theme-toggle input {
-    margin-right: 5px;
-  }
-  
+}
