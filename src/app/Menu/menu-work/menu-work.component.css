@@ -27,6 +27,7 @@
 .job-header {
     display: flex;
     justify-content: space-between; /* Space between company logo and details */
+    align-items: center; /* Align items vertically */
     text-align: left;
     width: 100%; /* Ensure header spans full width */
     margin-bottom: 20px;
@@ -71,7 +72,6 @@ ul li {
     text-align: left; /* Ensure text aligns left */
 }
 
-
 /* Responsive Design */
 @media only screen and (max-width: 768px) {
     .experience {
@@ -87,7 +87,7 @@ ul li {
     }
 
     .company-logo {
-        width: 120px; /* Adjust size of company logo for smaller screens */
+        width: 100px; /* Adjust size of company logo for smaller screens */
         height: auto; /* Maintain aspect ratio */
         margin-bottom: 10px; /* Adjust margin between company logo and details */
     }
