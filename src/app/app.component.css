@@ -16,12 +16,11 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  min-width: 100vh;
   min-height: 100vh;
   transition: background-color 0.5s, color 0.5s;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensure footer is at the bottom */
+  justify-content: space-between;
 }
 
 /* Dark mode styles */
@@ -58,7 +57,7 @@ body {
 /* Main div styles */
 .div-main-id {
   text-align: center;
-  padding: 90px; /* Add space around the element */
+  padding: 90px;
 }
 
 .div-main-id h1 {
