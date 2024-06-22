@@ -1,4 +1,67 @@
-#home{
-    padding: 10px;
+.head {
+    margin: 0;
+    padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+*/ Intro Section Styles */
+#intro-section {
+    text-align: left;
+    max-width: fit-content;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    padding-top: 60px; /* Adjust padding for space below fixed header */
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#intro-section h1 {
+    padding-left: 10px;
+    font-size: 2em;
+    margin: 0;
+}
+
+
+
+#intro-section h2 {
+    padding-left: 10px;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#intro-section p {
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 375px) {
+    #head{
+        max-width: fit-content;
+    }
+    #intro-section {
+        text-align: center;
+        padding-top: 100px; /* Adjust padding for space below fixed header */
+    }
+
+    #intro-section h1 {
+        font-size: 1.5em;
+    }
+
+    #intro-section h2 {
+        font-size: 1.2em;
+    }
+
+    #intro-section p {
+        font-size: 1em;
+    }
+
+   
+}
