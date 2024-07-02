@@ -1,25 +1,25 @@
 {
     "projects": [
         {
-        "name": "Portfolio Builder",
-        "image": "/assets/images/Portfolio_builder.png",
-        "technology_used": "Node.js, Azure, OpenAI API",
-        "details": "In the world of Portfolio Builder, Node.js and OpenAI's GPT-4 collaborate to weave personalized portfolio tales. With HTML, CSS, and JavaScript, we've fashioned an intuitive interface, while battling bugs to ensure a seamless user experience. Join us on this thrilling journey, where your portfolio becomes a captivating narrative, and comprehensive documentation lights the path to triumph.",
-        "github_link": "https://github.com/Prabal31/Portfolio-Builder.git"
+          "name": "Portfolio Builder",
+          "image": "/assets/images/Portfolio_builder.png",
+          "technology_used": "Node.js, Azure, OpenAI API",
+          "details": "In the world of Portfolio Builder, Node.js and OpenAI's GPT-4 collaborate to weave personalized portfolio tales. With HTML, CSS, and JavaScript, we've fashioned an intuitive interface, while battling bugs to ensure a seamless user experience. Join us on this thrilling journey, where your portfolio becomes a captivating narrative, and comprehensive documentation lights the path to triumph.",
+          "github_link": "https://github.com/Prabal31/Portfolio-Builder.git"
         },
         {
-        "name": "Virtual Bookstore",
-        "image": "/assets/images/Bookstore.jpeg",
-        "technology_used": "Java-Springboot, MySQL",
-        "details": "Experience the seamless fusion of Java Spring Boot, MySQL, and dynamic frontend technologies in Virtual Bookstore. With robust Spring Security features, effortlessly navigate through three distinct user roles, while RESTful APIs ensure smooth communication for real-time interactions. From advanced admin management to seamless guest exploration, embark on a journey of efficient online browsing and purchasing. 📚✨",
-        "github_link": "https://github.com/Prabal31/Book-Website/tree/main"
+          "name": "Virtual Bookstore",
+          "image": "/assets/images/Bookstore.jpeg",
+          "technology_used": "Java-Springboot, MySQL",
+          "details": "Experience the seamless fusion of Java Spring Boot, MySQL, and dynamic frontend technologies in Virtual Bookstore. With robust Spring Security features, effortlessly navigate through three distinct user roles, while RESTful APIs ensure smooth communication for real-time interactions. From advanced admin management to seamless guest exploration, embark on a journey of efficient online browsing and purchasing. 📚✨",
+          "github_link": "https://github.com/Prabal31/Book-Website/tree/main"
         },
         {
-        "name": "Content Management System",
-        "image": "/assets/images/Content_management_system.jpg",
-        "technology_used": "PHP, JavaScript, MySQL",
-        "details": "Discover a versatile Content Management System integrating PHP, JavaScript, and MySQL, tailored for seamless data management and real-time updates. Embracing industry-standard tools underscores a commitment to robust solutions and scalability. Addressing intricate challenges like real-time data updates and intuitive database interaction has refined problem-solving skills, fostering a drive for ongoing learning and industry relevancy.",
-        "github_link": "https://github.com/Prabal31"
+          "name": "Content Management System",
+          "image": "/assets/images/Content_management_system.jpg",
+          "technology_used": "PHP, JavaScript, MySQL",
+          "details": "Discover a versatile Content Management System integrating PHP, JavaScript, and MySQL, tailored for seamless data management and real-time updates. Embracing industry-standard tools underscores a commitment to robust solutions and scalability. Addressing intricate challenges like real-time data updates and intuitive database interaction has refined problem-solving skills, fostering a drive for ongoing learning and industry relevancy.",
+          "github_link": "https://github.com/Prabal31"
         },
         {
           "name": "My Portfolio",

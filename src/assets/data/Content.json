@@ -23,6 +23,10 @@
     {
     "Name": "Python 3",
     "pdf": "./assets/images/Python(beginner)_certificate.pdf"
+    },
+    {
+    "Name": "Microsoft Azure",  
+    "pdf": "./assets/images/Azure_certificate.pdf"
     }
   ]
 }
