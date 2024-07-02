@@ -1,0 +1,16 @@
+{
+    "Personal": {
+        "first": "Prabal",
+        "last": "Manchanda",
+        "image": "./assets/images/My_Photo.jpeg",
+        "occupation":"Software Developer",
+        "about": "Hey there! I'm Prabal Manchanda, a passionate software developer who thrives on designing and coding innovative solutions. With a love for crafting digital experiences, I bring creativity and precision to every project I undertake. Let's build something extraordinary together.",
+        "description": "I design and code beautiful simple things, and I love doing it."
+
+      },
+      "Links": {
+        "Linkedin": "https://www.linkedin.com/in/prabal-manchanda/",
+        "GitHub": "https://github.com/Prabal31",
+        "Email": "manchapr@sheridancollege.ca"
+      }
+}

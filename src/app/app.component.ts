@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {Personal, Links, Project, Experience} from "./MyInfo";
-import data from '../assets/data/Mydata.json';
+import data from '../assets/data/Content.json';
+import work from '../assets/data/Experience.json';
+import build from '../assets/data/Projects.json';
 
 
 @Component({
@@ -12,7 +14,7 @@ export class AppComponent {
   title = 'portfolio';
   mydata: Personal = data.Personal;
   link: Links = data.Links;
-  project:Project[] = data.projects;
-  experience:Experience[] = data.Experience;
+  project:Project[] = build.projects;
+  experience:Experience[] = work.Experience;
   darkMode = false;
 }
