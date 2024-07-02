@@ -43,6 +43,7 @@
 /* Certifications section */
 .certifications-container {
     padding: 40px;
+    text-align: center;
     background-color: rgb(169, 169, 245);
     margin-top: 20px; /* Space between About and Certifications sections */
 }
@@ -60,12 +61,13 @@
 .certificate {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    text-align: left;
     padding: 10px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-    width: 150px; /* Reduced width */
-    height: 80px; /* Reduced height */
+    width: 120px; /* Reduced width */
+    height: 60px; /* Reduced height */
     margin-right: 20px;
 }
 
@@ -76,6 +78,7 @@
 .certificate h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: rgb(0, 0, 0);
 }
 
 .certificate p {
@@ -86,8 +89,6 @@
     color: blue;
     text-decoration: underline;
 }
-
-
 
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
