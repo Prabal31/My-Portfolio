@@ -8,4 +8,10 @@
             <p>{{data.about}}</p>
         </div>
     </div>
+    <div class="certifications-container">
+        <h2 id="certifications-h2">Certifications</h2>
+        <div class="certifications-content" *ngFor="let certificate of certificate">
+            <h3>{{certificate.Name}}</h3>
+        </div>
+    </div>
 </div>
