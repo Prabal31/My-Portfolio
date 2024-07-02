@@ -18,11 +18,11 @@
   "Certificate":[
     {
     "Name": "Node.js",
-    "img": "./assets/images/Node_certificate.pdf"
+    "pdf": "./assets/images/Node_certificate.pdf"
     },
     {
     "Name": "Python 3",
-    "img": "./assets/images/Python(beginner)_certificate.pdf"
+    "pdf": "./assets/images/Python(beginner)_certificate.pdf"
     }
   ]
 }

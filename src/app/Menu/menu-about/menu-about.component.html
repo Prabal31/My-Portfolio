@@ -10,8 +10,13 @@
     </div>
     <div class="certifications-container">
         <h1 id="certifications-h2">Certifications</h1>
-        <div class="certifications-content" *ngFor="let certificate of certificate">
-            <h2>{{certificate.Name}}</h2>
+        <div class="certifications-content">
+            <div class="certificate" *ngFor="let certificate of certificate">
+                <div class="certificate-details">
+                    <h3>{{certificate.Name}}</h3>
+                    <a href="{{certificate.pdf}}" target="_blank">View Certificate</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

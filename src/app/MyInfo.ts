@@ -33,5 +33,5 @@ export interface Experience{
 
 export interface Certificate{
     Name: string;
-    img: string;
+    pdf: string;
 }

@@ -26,6 +26,7 @@
 
 .about-me-photo img {
     margin-right: 90px;
+    margin-left: 20px;
     width: 400px; /* Adjust the size of the image */
     height: 400px; /* Adjust the size of the image */
     border-radius: 50%; /* Make the image circular */
@@ -41,10 +42,8 @@
 
 /* Certifications section */
 .certifications-container {
-    width: 100%;
-    padding: 20px 20px 100px 20px;
+    padding: 40px;
     background-color: rgb(169, 169, 245);
-    text-align: left;
     margin-top: 20px; /* Space between About and Certifications sections */
 }
 
@@ -54,19 +53,37 @@
 
 .certifications-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; /* Align items to the start */
     gap: 20px;
     padding-left: 40px; /* Align certificates with header */
 }
 
 .certificate {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+.certificate-details {
+    flex: 1;
 }
 
 .certificate h3 {
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.certificate p {
+    margin: 0;
+}
+
+.certificate a {
+    color: blue;
+    text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -102,6 +119,12 @@
     .certifications-container h2,
     .certifications-content {
         padding-left: 20px; /* Adjust padding for mobile */
+    }
+
+    .certificate {
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 100%;
     }
 }
 
