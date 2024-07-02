@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Personal, Links, Project, Experience} from "./MyInfo";
+import {Personal, Links, Project, Experience, Certificate} from "./MyInfo";
 import data from '../assets/data/Content.json';
 import work from '../assets/data/Experience.json';
 import build from '../assets/data/Projects.json';
@@ -16,5 +16,6 @@ export class AppComponent {
   link: Links = data.Links;
   project:Project[] = build.projects;
   experience:Experience[] = work.Experience;
+  certificate:Certificate[] = data.Certificate;
   darkMode = false;
 }

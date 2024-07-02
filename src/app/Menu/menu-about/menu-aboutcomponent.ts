@@ -1,5 +1,5 @@
 import { Component, Input} from '@angular/core';
-import {Personal} from "src/app/MyInfo";
+import {Personal,Certificate} from "src/app/MyInfo";
 
 
 @Component({
@@ -9,5 +9,5 @@ import {Personal} from "src/app/MyInfo";
 })
 export class MenuAboutComponent {
   @Input() data!: Personal;
-
+  @Input() certificate!: Certificate[];
 }

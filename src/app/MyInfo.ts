@@ -30,3 +30,8 @@ export interface Experience{
     Point4: string;
     Point5: string;
 }
+
+export interface Certificate{
+    Name: string;
+    img: string;
+}
