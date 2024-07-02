@@ -47,8 +47,6 @@ body {
   color: #ffffff;
 }
 
-
-
 .dark-mode .experience a {
   color: #ffffff;
 }
@@ -77,6 +75,20 @@ body {
   height: 10%;
   font-weight: bold;
   font-size: 30px;
+}
+
+/* Filter input styles */
+.filter-input {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.filter-input input {
+  margin-top: 100px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 /* Theme toggle styles */
@@ -127,6 +139,16 @@ body {
   .theme-toggle h1 {
     font-size: 1em;
   }
+
+  .filter-input {
+    top: 10px;
+    right: 10px;
+  }
+
+  .filter-input input {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
@@ -152,5 +174,15 @@ body {
 
   .theme-toggle h1 {
     font-size: 1.2em;
+  }
+
+  .filter-input {
+    top: 15px;
+    right: 15px;
+  }
+
+  .filter-input input {
+    font-size: 15px;
+    padding: 9px;
   }
 }

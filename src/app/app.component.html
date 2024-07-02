@@ -1,21 +1,31 @@
 <div [ngClass]="{'dark-mode': darkMode}" class="theme-container">
-  <app-header id="home" [data]="mydata"></app-header>
-
-  <div class="div-main-id">
+    <app-header id="home" [data]="mydata"></app-header>
+  
+    <div class="filter-input">
+      <input type="text" placeholder="Search by title" [(ngModel)]="filterText" (input)="filterCards()">
+    </div>
+  
+    <div class="div-main-id">
       <h1>Software Development<br>and Design Studio<br>from the Future.</h1>
       <button><a href="#projects">Dig into my universe</a></button>
-  </div>
-
-  <app-menu-about [data]="mydata" [certificate]="certificate"></app-menu-about>
-  <app-menu-work [pexperience]="experience"></app-menu-work>
-  <app-menu-projects [pwork]="project" ></app-menu-projects>
-  <app-menu-contact [links]="link"></app-menu-contact>
-  <app-footer [data]="mydata"></app-footer>
-
-  <div class="theme-toggle">
+    </div>
+  
+    <ng-container *ngIf="!filterText || filteredData.length > 0">
+      <app-menu-about *ngIf="isCardVisible('about')" [data]="mydata" [certificate]="certificate"></app-menu-about>
+      <app-menu-work *ngIf="isCardVisible('work')" [pexperience]="experience"></app-menu-work>
+      <app-menu-projects *ngIf="isCardVisible('projects')" [pwork]="project"></app-menu-projects>
+      <app-menu-contact *ngIf="isCardVisible('contact')" [links]="link"></app-menu-contact>
+    </ng-container>
+  
+    <div *ngIf="filterText && filteredData.length === 0">No results found</div>
+  
+    <app-footer [data]="mydata"></app-footer>
+  
+    <div class="theme-toggle">
       <h1>Theme!</h1>
       <label>
-          <input type="checkbox" [(ngModel)]="darkMode"> Dark Mode
+        <input type="checkbox" [(ngModel)]="darkMode"> Dark Mode
       </label>
+    </div>
   </div>
-</div>
+  
