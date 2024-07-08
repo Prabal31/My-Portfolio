@@ -18,19 +18,19 @@
   "Certificate":[
     {
     "Name": "Node.js",
-    "pdf": "./assets/images/Node_certificate.pdf"
+    "pdf": "./assets/certifications/Node_certificate.pdf"
     },
     {
     "Name": "Python 3",
-    "pdf": "./assets/images/Python(beginner)_certificate.pdf"
+    "pdf": "./assets/certifications/Python(beginner)_certificate.pdf"
     },
     {
     "Name": "Microsoft Azure",  
-    "pdf": "./assets/images/Microsoft Azure_certificate.pdf"
+    "pdf": "./assets/certifications/Microsoft Azure_certificate.pdf"
     },
     {
       "Name": "DevOps Course",  
-      "pdf": "./assets/images/DevOps_certificate.pdf"
+      "pdf": "./assets/certifications/DevOps_certificate.pdf"
       }
   ]
 }
