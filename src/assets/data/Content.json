@@ -27,6 +27,10 @@
     {
     "Name": "Microsoft Azure",  
     "pdf": "./assets/images/Microsoft Azure_certificate.pdf"
-    }
+    },
+    {
+      "Name": "DevOps Course",  
+      "pdf": "./assets/images/DevOps_certificate.pdf"
+      }
   ]
 }
