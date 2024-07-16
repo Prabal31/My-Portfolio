@@ -27,6 +27,13 @@
           "technology_used": "Angular, NodeJs, MongoDb",
           "details": "This very portfolio you are exploring showcases my skills and expertise in web development, specifically utilizing Angular, NodeJs, and MongoDb to create a dynamic and responsive design. Through this project, I've honed my problem-solving skills, particularly in addressing challenges like real-time data updates and intuitive database interactions. Each aspect of this portfolio underscores my passion for continuous learning and staying relevant in the ever-evolving tech industry.",
           "github_link": "https://github.com/Prabal31/My-Portfolio.git"
+        },
+        {
+          "name": "Scrabble Game",
+          "image": "/assets/images/Scrabble.jpg",
+          "technology_used": "Python",
+          "details": "The Scrabble Game project showcases my skills and expertise in Python programming. Through this project, I've enhanced my understanding of game development, specifically focusing on creating an interactive and user-friendly experience. This project also helped me improve my problem-solving skills, particularly in implementing complex algorithms for word validation and score calculation. Each aspect of this game development project highlights my commitment to continuous learning and staying up-to-date with advancements in the tech industry.",
+          "github_link": "https://github.com/Prabal31/Scrabble.git"
         }
     ]
 }
