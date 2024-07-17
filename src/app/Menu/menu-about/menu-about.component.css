@@ -94,6 +94,7 @@
     .about-me-container {
         flex-direction: column;
         padding-top: 100px;
+        width: 430px;
     }
 
     .about-me-content {
@@ -120,14 +121,18 @@
 
     .certifications-container h2,
     .certifications-content {
-        padding-left: 5px; /* Adjust padding for mobile */
+        padding-left: 1px; /* Adjust padding for mobile */
     }
 
     .certificate {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 150px;
-        height: 100%;
+
+        width: 100px;
+        height: 130px;
+        padding: 0px;
+    }
+    .certifications-container{
+        width: 430px;
+        padding: 0px;
     }
 }
 
