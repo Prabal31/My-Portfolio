@@ -29,8 +29,8 @@
     "pdf": "./assets/certifications/Microsoft Azure_certificate.pdf"
     },
     {
-      "Name": "DevOps Course",  
-      "pdf": "./assets/certifications/DevOps_Certification.pdf"
-      }
+    "Name": "DevOps Course",  
+    "pdf": "./assets/certifications/DevOps_Certification.pdf"
+    }
   ]
 }

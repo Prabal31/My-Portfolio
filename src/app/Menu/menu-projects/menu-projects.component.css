@@ -3,21 +3,19 @@
     flex-direction: column;
     padding-top: 160px;
     width: 100%;
-    align-items: center; /* Center align items */
 }
 
 .projects h2 {
     padding-top: 20px;
     color: #0056b3;
-    text-align: center;
     font-size: 3em;
     margin-bottom: 40px; /* Add margin for spacing */
+    text-align: center;
 }
 
 .project {
     display: flex;
     align-items: center; /* Center vertically */
-    flex-direction: row;
     width: 100%; /* Stretch to full width */
     margin-bottom: 40px; /* Space between projects */
     flex-wrap: wrap; /* Allow wrapping for small screens */
@@ -77,79 +75,63 @@
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 430px) {
+    
+    .project {
+        flex-direction: column; /* Stack project details vertically */
+        margin-bottom: 20px;
+        width: fit-content;
+
+    }
     .projects h2 {
         font-size: 2em;
+        width: fit-content;
+        text-align: center;
     }
 
-    .project {
-        flex-direction: column; /* Stack image and text vertically */
-        width: 100%;
-        margin-bottom: 20px;
-    }
+    
 
     .project-image {
         padding: 0;
+        width: fit-content;
     }
 
     .project-image img {
-        width: 80%;
-        max-width: 300px;
+        padding: 0%;
+        width: fit-content;
+        width: 250px;
+
     }
 
     .project-info {
         padding: 10px;
         margin-left: 0;
-        text-align: center; /* Center text */
+        width: fit-content;
+        width: 400px;
+
     }
 
     .project-info h3 {
         font-size: 1.5em;
+        width: fit-content;
+
     }
 
     .project-info .tech {
         font-size: 1.3em;
+        width: fit-content;
+
     }
 
     .project-info .details {
         font-size: 1em;
+        width: fit-content;
+
     }
 
     .github-link {
         font-size: 30px;
-    }
-}
+        width: fit-content;
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
-    .projects h2 {
-        font-size: 2.5em;
-    }
-
-    .project {
-        width: 90%;
-    }
-
-    .project-image img {
-        max-width: 400px;
-    }
-
-    .project-info {
-        padding: 15px;
-    }
-
-    .project-info h3 {
-        font-size: 1.7em;
-    }
-
-    .project-info .tech {
-        font-size: 1.5em;
-    }
-
-    .project-info .details {
-        font-size: 1.1em;
-    }
-
-    .github-link {
-        font-size: 40px;
     }
 }
