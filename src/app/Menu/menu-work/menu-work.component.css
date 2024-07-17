@@ -73,21 +73,18 @@ ul li {
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .experience {
         padding-top: 80px; /* Adjust padding for smaller screens */
-        padding-bottom: 40px; /* Adjust padding for smaller screens */
+        max-width: 430px;
     }
 
     .job-header {
         flex-direction: column; /* Stack company logo on top in smaller screens */
-        align-items: center; /* Center align items */
-        justify-content: center; /* Center align content */
-        text-align: center; /* Center align text */
+
     }
 
     .company-logo {
-        width: 100px; /* Adjust size of company logo for smaller screens */
         height: auto; /* Maintain aspect ratio */
         margin-bottom: 10px; /* Adjust margin between company logo and details */
     }

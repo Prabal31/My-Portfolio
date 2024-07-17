@@ -83,8 +83,8 @@
     }
 
     .project {
-        flex-direction: column; /* Stack image and text vertically */
-        width: 100%;
+        flex-direction: column; /* Stack project details vertically */
+        width: 430px;
         margin-bottom: 20px;
     }
 
@@ -94,7 +94,6 @@
 
     .project-image img {
         width: 80%;
-        max-width: 300px;
     }
 
     .project-info {
