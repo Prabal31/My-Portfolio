@@ -42,26 +42,14 @@
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     #head{
-        max-width: fit-content;
+        width: fit-content;
     }
     #intro-section {
         text-align: center;
-        padding-top: 100px; /* Adjust padding for space below fixed header */
+        width: 430px;
     }
 
-    #intro-section h1 {
-        font-size: 1.5em;
-    }
 
-    #intro-section h2 {
-        font-size: 1.2em;
-    }
-
-    #intro-section p {
-        font-size: 1em;
-    }
-
-   
 }
