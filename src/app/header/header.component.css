@@ -51,6 +51,7 @@
     #intro-section {
         text-align: center;
         padding-top: 100px; /* Adjust padding for space below fixed header */
+        width: 100vw;
     }
 
     #intro-section h1 {
