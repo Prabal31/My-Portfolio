@@ -81,6 +81,7 @@ ul li {
     }
     .experience h2{
         width: fit-content;
+        padding-right: 20px;
     }
     .job-header {
         width: fit-content;
