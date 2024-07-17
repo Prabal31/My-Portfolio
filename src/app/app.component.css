@@ -118,6 +118,7 @@ body {
 @media only screen and (max-width: 600px) {
   .div-main-id {
     padding: 20px;
+    width: 430px;
   }
 
   .div-main-id h1 {
