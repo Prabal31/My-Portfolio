@@ -73,24 +73,24 @@ ul li {
 }
 
 /* Responsive Design */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 430px) {
     .experience {
         padding-top: 80px; /* Adjust padding for smaller screens */
-        max-width: 430px;
+        width: fit-content;
+        
     }
-
+    .experience h2{
+        width: fit-content;
+    }
     .job-header {
-        flex-direction: column; /* Stack company logo on top in smaller screens */
+        width: fit-content;
 
     }
 
-    .company-logo {
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 10px; /* Adjust margin between company logo and details */
-    }
 
     .position {
         font-size: 1em; /* Decrease font size */
+        width: fit-content;
     }
 
     ul {
