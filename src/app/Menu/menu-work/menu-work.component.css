@@ -97,5 +97,6 @@ ul li {
     ul {
         padding-left: 20px; /* Adjust padding for bullet points */
         font-size: 1em; /* Decrease font size */
+        width: 40%;
     }
 }
