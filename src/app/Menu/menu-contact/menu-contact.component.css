@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
 }
 
 .contact-icons button {
@@ -47,4 +48,53 @@
   border-radius: 50%; /* Make it circular */
 }
 
+/* Responsive Design for small devices */
+@media only screen and (max-width: 430px) {
+  .material-icons {
+    padding-top: 18px;
+    font-size: 1em; /* Adjust icon size */
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    line-height: 40px; /* Center icon vertically */
+    text-align: center; /* Center icon horizontally */
+    border-radius: 40%; /* Make it circular */
+  }
 
+  .contact-icons .fa-icons button {
+    margin-right: 15px; /* Adjust spacing between the buttons */
+  }
+}
+
+/* Responsive Design for medium devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .material-icons {
+    padding-top: 20px;
+    font-size: 1.2em; /* Adjust icon size */
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+    line-height: 50px; /* Center icon vertically */
+    text-align: center; /* Center icon horizontally */
+    border-radius: 50%; /* Make it circular */
+  }
+
+  .contact-icons .fa-icons button {
+    margin-right: 20px; /* Adjust spacing between the buttons */
+  }
+}
+
+/* Responsive Design for large devices */
+@media only screen and (min-width: 1025px) {
+  .material-icons {
+    padding-top: 28px;
+    font-size: 1.4em; /* Adjust icon size */
+    width: 60px; /* Set width */
+    height: 60px; /* Set height */
+    line-height: 60px; /* Center icon vertically */
+    text-align: center; /* Center icon horizontally */
+    border-radius: 50%; /* Make it circular */
+  }
+
+  .contact-icons .fa-icons button {
+    margin-right: 30px; /* Adjust spacing between the buttons */
+  }
+}
