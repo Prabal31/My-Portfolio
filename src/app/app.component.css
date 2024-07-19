@@ -12,14 +12,7 @@ body {
 }
 
 .theme-container {
-  flex: 1;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  min-width: 100vh;
-  min-height: 100vh;
   transition: background-color 0.5s, color 0.5s;
-  display: flex;
   flex-direction: column;
   justify-content: space-between; /* Ensure footer is at the bottom */
 }
@@ -116,6 +109,9 @@ body {
 
 /* Responsive Design */
 @media only screen and (max-width: 430px) {
+  .theme-container{
+    width: 100px;
+  }
   .div-main-id {
     padding: 20px;
     width: 430px;
