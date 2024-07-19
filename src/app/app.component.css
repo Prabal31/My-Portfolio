@@ -6,10 +6,6 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
 
 .theme-container {
   transition: background-color 0.5s, color 0.5s;
