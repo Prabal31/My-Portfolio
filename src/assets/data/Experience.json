@@ -24,6 +24,18 @@
             "Point3": "Design, implement, and optimize SQL databases, ensuring data integrity and efficient query performance for robust data handling.",
             "Point4": "Utilize Git for version control, collaborating with team members through branching, merging, and pull requests to manage codebases effectively.",
             "Point5": "Develop and maintain server-side applications using Node.js, ensuring efficient and scalable performance."
+        },
+        {
+            "Company_name": "Headstarter AI",
+            "Position": "Software Develope Fellow",
+            "Time_frame": "July 2024 - Present",
+            "Company_logo": "/assets/images/theheadstarter_logo.jpeg",
+            "Company_link" :"https://headstarter.co/",
+            "Point1": "Selected for a competitive fellowship, emphasizing a strong background and dedication to software engineering.",
+            "Point2": "Engaging with the open-source community by building and contributing to impactful projects, showcasing collaboration and technical skills.",
+            "Point3": "Regularly participating in hackathons, demonstrating quick problem-solving abilities and innovative thinking under time constraints.",
+            "Point4": "Undertaking a final project focused on developing a startup’s backlog to meet business requirements, illustrating real-world application and business acumen.",
+            "Point5": "Gaining insights and knowledge from top professionals, enhancing technical expertise and expanding professional networks"
         }
     ]
 }
