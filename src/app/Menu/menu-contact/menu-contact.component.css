@@ -47,10 +47,4 @@
   border-radius: 50%; /* Make it circular */
 }
 
-@media only screen and (max-width: 430px) {
-  .main-div{
-    width:390px;
-  }
-
-}
 
