@@ -106,7 +106,7 @@ html, body {
 /* Responsive Design */
 @media only screen and (max-width: 430px) {
   .theme-container{
-    width: 100%;
+    width: 430px;
   }
   .div-main-id {
     padding: 20px;
