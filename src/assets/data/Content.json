@@ -31,6 +31,10 @@
     {
     "Name": "DevOps Course",  
     "pdf": "./assets/certifications/DevOps_Certification.pdf"
-    }
+    },
+    {
+      "Name": "Ruby",  
+      "pdf": "./assets/certifications/Ruby_Certification.pdf"
+      }
   ]
 }
