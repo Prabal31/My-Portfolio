@@ -15,6 +15,7 @@ import { MenuWorkComponent } from './Menu/menu-work/menu-work.component';
 import { MenuProjectsComponent } from './Menu/menu-projects/menu-projects.component';
 import { MenuContactComponent } from './Menu/menu-contact/menu-contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectsDetailsComponent } from './Menu/menu-projects/projects-details/projects-details.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MenuWorkComponent,
     MenuProjectsComponent,
     MenuContactComponent,
+    ProjectsDetailsComponent,
   ],
   imports: [
     BrowserModule,

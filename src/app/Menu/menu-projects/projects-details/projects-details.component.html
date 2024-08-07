@@ -1,0 +1,10 @@
+<!-- src/app/components/project-details/project-details.component.html -->
+<div *ngIf="project" class="project-details">
+    <h2>{{ project.name }}</h2>
+    <img src="{{ project.image }}" alt="{{ project.name }}">
+    <p><strong>Technologies Used:</strong> {{ project.technology_used }}</p>
+    <p>{{ project.details }}</p>
+    <a href="{{ project.github_link }}" target="_blank">View on GitHub</a>
+    <!-- Add more fields as necessary -->
+  </div>
+  

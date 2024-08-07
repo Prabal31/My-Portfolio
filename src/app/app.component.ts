@@ -3,6 +3,7 @@ import { Personal, Links, Project, Experience, Certificate } from "./MyInfo";
 import data from '../assets/data/Content.json';
 import work from '../assets/data/Experience.json';
 import build from '../assets/data/Projects.json';
+import { RouterModule } from '@angular/router';
 
 interface Card {
   type: string;

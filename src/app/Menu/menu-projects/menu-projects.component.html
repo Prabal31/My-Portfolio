@@ -1,8 +1,9 @@
+<!-- src/app/components/projects/projects.component.html -->
 <div class="projects" id="projects">
   <h2>My Projects</h2>
   <div class="project" *ngFor="let project of pwork">
     <div class="project-image">
-      <img src="{{ project.image }}" alt="Portfolio Maker Logo">
+      <img src="{{ project.image }}" alt="{{ project.name }}">
     </div>
     <div class="project-info">
       <h3>{{ project.name }}</h3>
