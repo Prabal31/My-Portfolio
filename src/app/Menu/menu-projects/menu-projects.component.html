@@ -1,16 +1,22 @@
 <div class="projects" id="projects">
-    <h2>My Projects</h2>
-    <div class="project" *ngFor="let project of pwork">
-        <div class="project-image">
-            <img src="{{ project.image }}" alt="Portfolio Maker Logo">
-        </div>
-        <div class="project-info">
-            <h3>{{ project.name }} </h3>
-            <p class="tech">{{ project.technology_used  }}</p>
-            <p class="details">{{ project.details }}</p>
-            <a href="{{ project.github_link }}" class="github-link" title="View on GitHub" target="_blank">
-                <fa-icon [icon]="myGithub" style="color: #333333;"></fa-icon>      
-            </a> 
-        </div>
-    </div>      
+  <h2>My Projects</h2>
+  <div class="project" *ngFor="let project of pwork">
+    <div class="project-image">
+      <img src="{{ project.image }}" alt="Portfolio Maker Logo">
+    </div>
+    <div class="project-info">
+      <h3>{{ project.name }}</h3>
+      <p class="tech">{{ project.technology_used }}</p>
+      <p class="details">{{ project.details }}</p>
+      <a href="{{ project.github_link }}" class="github-link" title="View on GitHub" target="_blank">
+        <fa-icon [icon]="myGithub" style="color: #333333;"></fa-icon>
+      </a>
+      <div class="project-buttons">
+        <button (click)="toggleLike(project.id.toString())" [class.liked]="isLiked(project.id.toString())">
+          {{ isLiked(project.id.toString()) ? 'Unlike' : 'Like' }}
+        </button>
+        <button (click)="goToDetails(project.id.toString())">View Details</button>
+      </div>
+    </div>
+  </div>
 </div>

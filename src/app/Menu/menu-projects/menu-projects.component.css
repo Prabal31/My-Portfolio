@@ -73,6 +73,47 @@
     border-radius: 50px;
 }
 
+button.liked {
+    background-color: #ff4081;
+    color: white;
+  }
+  
+  button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  .project-buttons {
+    margin-top: 20px;
+  }
+  
+  .project-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  .project-buttons button.liked {
+    background-color: #ff4081;
+    color: white;
+  }
+  
+  .project-buttons button:hover {
+    background-color: #003d7a;
+  }
+  
+
 /* Responsive Design */
 @media only screen and (max-width: 430px) {
     
@@ -81,15 +122,12 @@
         margin-bottom: 20px;
         width: 100%;
         text-align: center;
-
     }
     .projects h2 {
         font-size: 2em;
         width: 400px;
         text-align: center;
     }
-
-    
 
     .project-image {
         padding: 0;
@@ -100,7 +138,6 @@
         padding: 0%;
         width: fit-content;
         width: 250px;
-
     }
 
     .project-info {
@@ -108,30 +145,26 @@
         margin-left: 0;
         width: fit-content;
         width: 400px;
-
     }
 
     .project-info h3 {
         font-size: 1.5em;
         width: fit-content;
-
     }
 
     .project-info .tech {
         font-size: 1.3em;
         width: fit-content;
-
     }
 
     .project-info .details {
         font-size: 1em;
         width: fit-content;
-
     }
+    
 
     .github-link {
         font-size: 30px;
         width: fit-content;
-
     }
 }

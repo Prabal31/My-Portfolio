@@ -12,6 +12,7 @@ export interface Links {
     Email: string
 }
 export interface Project {
+    id: number;
     name: string;
     image: string;
     technology_used: string;
