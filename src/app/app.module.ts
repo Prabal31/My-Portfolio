@@ -15,7 +15,8 @@ import { MenuWorkComponent } from './Menu/menu-work/menu-work.component';
 import { MenuProjectsComponent } from './Menu/menu-projects/menu-projects.component';
 import { MenuContactComponent } from './Menu/menu-contact/menu-contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ProjectsDetailsComponent } from './Menu/menu-projects/projects-details/projects-details.component';
+import { LikeButtonService } from './like-button.service';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { ProjectsDetailsComponent } from './Menu/menu-projects/projects-details/
     MenuWorkComponent,
     MenuProjectsComponent,
     MenuContactComponent,
-    ProjectsDetailsComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +40,7 @@ import { ProjectsDetailsComponent } from './Menu/menu-projects/projects-details/
     FontAwesomeModule
 
   ],
-  providers: [],
+  providers: [LikeButtonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

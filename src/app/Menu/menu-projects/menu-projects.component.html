@@ -1,9 +1,8 @@
-<!-- src/app/components/projects/projects.component.html -->
 <div class="projects" id="projects">
   <h2>My Projects</h2>
   <div class="project" *ngFor="let project of pwork">
     <div class="project-image">
-      <img src="{{ project.image }}" alt="{{ project.name }}">
+      <img src="{{ project.image }}" alt="Portfolio Maker Logo">
     </div>
     <div class="project-info">
       <h3>{{ project.name }}</h3>
@@ -16,7 +15,7 @@
         <button (click)="toggleLike(project.id.toString())" [class.liked]="isLiked(project.id.toString())">
           {{ isLiked(project.id.toString()) ? 'Unlike' : 'Like' }}
         </button>
-        <button (click)="goToDetails(project.id.toString())">View Details</button>
+        <button [routerLink]="['project/',project.id]">View Details</button>
       </div>
     </div>
   </div>

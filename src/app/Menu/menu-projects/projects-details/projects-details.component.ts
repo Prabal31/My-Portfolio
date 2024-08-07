@@ -1,6 +1,6 @@
-// src/app/components/project-details/projects-details.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 import { LikeButtonService } from '../../../like-button.service';
 import { Project } from 'src/app/MyInfo';
 
@@ -12,29 +12,30 @@ import { Project } from 'src/app/MyInfo';
 export class ProjectsDetailsComponent implements OnInit {
   project!: Project;
   projectId!: number;
+  private jsonUrl = 'assets/data/projects.json';
 
   constructor(
     private route: ActivatedRoute,
-    private likeService: LikeButtonService
+    private likeService: LikeButtonService,
+    private http: HttpClient
   ) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.projectId = +params.get('id')!; // Convert to number using '+'
-      this.project = this.fetchProjectDetails(this.projectId);
+      this.getProjectData();
     });
   }
 
-  fetchProjectDetails(id: number): Project {
-    // Mock function to simulate fetching project data
-    return {
-      id: id,
-      name: 'Example Project',
-      image: 'path/to/image.jpg',
-      technology_used: 'Angular, TypeScript',
-      details: 'Detailed description of the project...',
-      github_link: 'https://github.com/example/project'
-    };
+  getProjectData(): void {
+    this.http.get<{ projects: Project[] }>(this.jsonUrl).subscribe(data => {
+      const project = data.projects.find(p => p.id === this.projectId);
+      if (project) {
+        this.project = project;
+      } else {
+        // Handle project not found case, e.g., redirect or show a message
+      }
+    });
   }
 
   toggleLike(): void {

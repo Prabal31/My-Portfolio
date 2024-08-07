@@ -1,0 +1,186 @@
+/* Global styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .theme-container {
+    transition: background-color 0.5s, color 0.5s;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure footer is at the bottom */
+  }
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark-mode h2,
+  .dark-mode h3,
+  .dark-mode h4,
+  .dark-mode h5,
+  .dark-mode h6,
+  .dark-mode p,
+  .dark-mode span,
+  .dark-mode li,
+  .dark-mode .black-text {
+    color: #ffffff !important;
+  }
+  
+  .dark-mode .experience {
+    background: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .dark-mode .experience a {
+    color: #ffffff;
+  }
+  
+  .dark-mode .company-logo {
+    filter: invert(1);
+  }
+  
+  /* Main div styles */
+  .div-main-id {
+    text-align: center;
+    padding: 90px; /* Add space around the element */
+  }
+  
+  .div-main-id h1 {
+    font-size: 130px;
+    color: rgb(114, 114, 250);
+  }
+  
+  .div-main-id a {
+    text-decoration: none;
+  }
+  
+  .div-main-id button {
+    width: 24%;
+    height: 10%;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  /* Filter input styles */
+  .filter-input {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .filter-input input {
+    margin-top: 100px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Theme toggle styles */
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .theme-toggle h1 {
+    font-size: 1.5em;
+  }
+  
+  .theme-toggle label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .theme-toggle input {
+    margin-right: 5px;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 430px) {
+    .theme-container{
+      width: 430px;
+    }
+    .div-main-id {
+      padding: 20px;
+      width: 391px;
+    }
+  
+    .div-main-id h1 {
+      font-size: 2em;
+    }
+  
+    .div-main-id button {
+      width: 80%;
+      height: auto;
+      font-size: 1em;
+    }
+  
+    .theme-toggle {
+      bottom: 20px;
+      left: 20px;
+      width: 80px;
+  
+  
+    }
+  
+    .theme-toggle h1 {
+      font-size: 1em;
+      width: fit-content;
+  
+    }
+  
+    .filter-input {
+      top: 10px;
+      right: 10px;
+    }
+  
+    .filter-input input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .div-main-id {
+      padding: 50px;
+    }
+  
+    .div-main-id h1 {
+      font-size: 3em;
+    }
+  
+    .div-main-id button {
+      width: 50%;
+      height: auto;
+      font-size: 1.5em;
+    }
+  
+    .theme-toggle {
+      bottom: 15px;
+      right: 15px;
+      padding: 8px;
+    }
+  
+    .theme-toggle h1 {
+      font-size: 1.2em;
+    }
+  
+    .filter-input {
+      top: 15px;
+      right: 15px;
+    }
+  
+    .filter-input input {
+      font-size: 15px;
+      padding: 9px;
+    }
+  }
+  
