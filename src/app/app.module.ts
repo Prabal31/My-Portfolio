@@ -17,7 +17,8 @@ import { MenuContactComponent } from './Menu/menu-contact/menu-contact.component
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LikeButtonService } from './like-button.service';
 import { MainComponent } from './main/main.component';
-
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,8 @@ import { MainComponent } from './main/main.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
 
   ],
   providers: [LikeButtonService],

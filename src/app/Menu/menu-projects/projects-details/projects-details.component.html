@@ -1,15 +1,12 @@
-<p>hello</p>
-<h1>{{projectId}}</h1>
-<div *ngIf="project" class="project-details">
-<h2>{{ project.name }}</h2>
-<div class="project-image">
-    <img [src]="project.image" alt="{{ project.name }}">
-</div>
-<div class="project-info">
-    <p><strong>Technologies Used:</strong> {{ project.technology_used }}</p>
-    <p>{{ project.details }}</p>
-    <a [href]="project.github_link" target="_blank">View on GitHub</a>
+<div class="project-details">
+    <h2>{{ project.name }}</h2>
+    <div class="project-image">
+      <img [src]="project.image" alt="{{ project.name }}">
     </div>
-</div>
-  
+    <div class="project-info">
+      <p><strong>Technologies Used:</strong> {{ project.technology_used }}</p>
+      <p>{{ project.details }}</p>
+      <a [href]="project.github_link" target="_blank">View on GitHub</a>
+    </div>
+  </div>
   

@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { LikeButtonService } from '../../../like-button.service';
 import { Project } from 'src/app/MyInfo';
-
+import projectData from '../../../../assets/data/Projects.json';
 @Component({
   selector: 'app-project-details',
   templateUrl: './projects-details.component.html',
@@ -12,29 +11,17 @@ import { Project } from 'src/app/MyInfo';
 export class ProjectsDetailsComponent implements OnInit {
   project!: Project;
   projectId!: number;
-  private jsonUrl = 'assets/data/projects.json';
 
   constructor(
     private route: ActivatedRoute,
-    private likeService: LikeButtonService,
-    private http: HttpClient
+    private likeService: LikeButtonService
   ) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      this.projectId = +params.get('id')!; // Convert to number using '+'
-      this.getProjectData();
-    });
-  }
+      this.projectId = parseInt(params.get('id')!); // Convert to number using parseInt()
+      this.project = this.getProject((this.projectId)-1);
 
-  getProjectData(): void {
-    this.http.get<{ projects: Project[] }>(this.jsonUrl).subscribe(data => {
-      const project = data.projects.find(p => p.id === this.projectId);
-      if (project) {
-        this.project = project;
-      } else {
-        // Handle project not found case, e.g., redirect or show a message
-      }
     });
   }
 
@@ -44,5 +31,9 @@ export class ProjectsDetailsComponent implements OnInit {
 
   isLiked(): boolean {
     return this.likeService.isLiked(this.project.id.toString());
+  }
+
+  getProject(id: number) {
+    return projectData.projects[id];
   }
 }

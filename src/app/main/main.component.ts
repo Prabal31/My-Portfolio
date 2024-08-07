@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Personal, Links, Project, Experience, Certificate } from "../MyInfo";
-import data from '../../assets/data/Content.json';
-import work from '../../assets/data/Experience.json';
-import build from '../../assets/data/Projects.json';
+
 import { RouterModule } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 interface Card {
   type: string;
@@ -17,13 +16,13 @@ interface Card {
 })
 export class MainComponent implements OnInit {
   title = 'portfolio';
-  mydata: Personal = data.Personal;
-  link: Links = data.Links;
-  project: Project[] = build.projects;
-  experience: Experience[] = work.Experience;
-  certificate: Certificate[] = data.Certificate;
+  mydata!: Personal;
+  link!: Links;
+  project!: Project[];
+  experience!: Experience[];
+  certificate!: Certificate[];
   darkMode = false;
-
+  constructor(private http: HttpClient) { }
   filterText = '';
 
   cards: Card[] = [
@@ -37,6 +36,9 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {
     this.filteredData = this.cards;
+    this.getProject();
+    this.getContent();  
+    this.getExperience();
   }
 
   filterCards() {
@@ -50,5 +52,32 @@ export class MainComponent implements OnInit {
 
   isCardVisible(type: string): boolean {
     return this.filteredData.some(card => card.type === type);
+  }
+
+  getProject(){
+    let url = '../../assets/data/Projects.json';
+    this.http.get(url).subscribe((data:any) => {
+      // console.log(data.projects);
+      this.project = data.projects;
+    });
+
+  }
+  getContent(){
+    let url = '../../assets/data/Content.json';
+    this.http.get(url).subscribe((data:any) => {
+      // console.log(data.projects);
+      this.mydata = data.Personal;
+      this.link = data.Links;
+      this.certificate = data.Certificate;
+    });
+
+
+  }
+  getExperience(){
+    let url = '../../assets/data/Experience.json';
+    this.http.get(url).subscribe((data:any) => {
+      // console.log(data.projects);
+      this.experience = data.Experience;
+    });
   }
 }
