@@ -54,6 +54,8 @@
 }
 
 .certificate {
+    height: 60px;
+    width: 120px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     text-align: left;
@@ -65,11 +67,6 @@
     flex: 1; /* Make each certificate take equal space */
 }
 
-.certificate img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
 
 .certificate-details {
     flex-grow: 1;
