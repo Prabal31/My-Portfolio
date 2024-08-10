@@ -35,6 +35,10 @@
     {
       "Name": "Ruby",  
       "pdf": "./assets/certifications/Ruby_Certification.pdf"
-      }
+    },
+    {
+      "Name": "Lua Course ",  
+      "pdf": "./assets/certifications/Lua_Certification.pdf"
+    }
   ]
 }
