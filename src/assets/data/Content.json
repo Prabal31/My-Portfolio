@@ -39,6 +39,10 @@
     {
       "Name": "Lua Course ",  
       "pdf": "./assets/certifications/Lua_Certification.pdf"
+    },
+    {
+    "Name": "Javascript ",  
+    "pdf": "./assets/certifications/javascript_Certification.pdf"
     }
   ]
 }
