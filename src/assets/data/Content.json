@@ -43,6 +43,10 @@
     {
     "Name": "Javascript ",  
     "pdf": "./assets/certifications/javascript_Certification.pdf"
-    }
+    },
+    {
+      "Name": "React.js ",  
+      "pdf": "./assets/certifications/React_Certification.pdf"
+      }
   ]
 }
