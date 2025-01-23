@@ -1,7 +1,15 @@
 {
     "projects": [
+      {
+        "id": 1,
+        "name": "PhrasePerfect",
+        "image": "/assets/images/Company_logo.png",
+        "technology_used": "React.js, GeminiAI API, Firebase and MongoDB",
+        "details": "A React-based web application featuring six AI-powered text utilities: Paraphraser, Grammar Checker, AI Detector, Summarizer, Translator, and Citation Generator. Built with Gemini AI for intelligent text processing and hosted on Firebase for secure, scalable, and real-time performance.",
+        "github_link": "https://github.com/Prabal31/"
+      },
         {
-          "id": 1,
+          "id": 2,
           "name": "Portfolio Builder",
           "image": "/assets/images/Portfolio_builder.png",
           "technology_used": "Node.js, Azure, OpenAI API",
@@ -9,7 +17,7 @@
           "github_link": "https://github.com/Prabal31/Portfolio-Builder.git"
         },
         {
-          "id": 2,
+          "id": 3,
           "name": "Virtual Bookstore",
           "image": "/assets/images/Bookstore.jpeg",
           "technology_used": "Java-Springboot, MySQL",
@@ -17,7 +25,7 @@
           "github_link": "https://github.com/Prabal31/Book-Website/tree/main"
         },
         {
-          "id": 3,
+          "id": 4,
           "name": "Content Management System",
           "image": "/assets/images/Content_management_system.jpg",
           "technology_used": "PHP, JavaScript, MySQL",
@@ -25,7 +33,7 @@
           "github_link": "https://github.com/Prabal31"
         },
         {
-          "id": 4,
+          "id": 5,
           "name": "My Portfolio",
           "image": "/assets/images/my-portfolio.png",
           "technology_used": "Angular, NodeJs, MongoDb",
@@ -33,7 +41,7 @@
           "github_link": "https://github.com/Prabal31/My-Portfolio.git"
         },
         {
-          "id": 5,
+          "id": 6,
           "name": "Scrabble Game",
           "image": "/assets/images/Scrabble.jpg",
           "technology_used": "Python",
