@@ -17,20 +17,20 @@
 
   "Certificate":[
     {
-    "Name": "Node.js",
-    "pdf": "./assets/certifications/Node_certificate.pdf"
+      "Name": "Node.js",
+      "pdf": "./assets/certifications/Node_certificate.pdf"
     },
     {
-    "Name": "Python 3",
-    "pdf": "./assets/certifications/Python(beginner)_certificate.pdf"
+      "Name": "Python 3",
+      "pdf": "./assets/certifications/Python(beginner)_certificate.pdf"
     },
     {
-    "Name": "Microsoft Azure",  
-    "pdf": "./assets/certifications/Microsoft Azure_certificate.pdf"
+      "Name": "Microsoft Azure",  
+      "pdf": "./assets/certifications/Microsoft Azure_certificate.pdf"
     },
     {
-    "Name": "DevOps Course",  
-    "pdf": "./assets/certifications/DevOps_Certification.pdf"
+      "Name": "DevOps Course",  
+      "pdf": "./assets/certifications/DevOps_Certification.pdf"
     },
     {
       "Name": "Ruby",  
@@ -41,12 +41,16 @@
       "pdf": "./assets/certifications/Lua_Certification.pdf"
     },
     {
-    "Name": "Javascript ",  
-    "pdf": "./assets/certifications/JavaScript _Certificate.pdf"
+      "Name": "Javascript ",  
+      "pdf": "./assets/certifications/JavaScript _Certificate.pdf"
     },
     {
       "Name": "React.js ",  
       "pdf": "./assets/certifications/Ruby_Certification.pdf"
-      }
+    },
+    {
+      "Name": "Data_and_Programming_Foundation_for_AI",  
+      "pdf": "./assets/certifications/Data_and_Programming_Foundation_for_AI_Certificatio.pdf"
+    }
   ]
 }
