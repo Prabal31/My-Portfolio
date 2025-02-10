@@ -2,6 +2,18 @@
 
     "Experience": [
         {
+            "Company_name": "GenieAInow",
+            "Position": "Software Developer I",
+            "Time_frame": "December 2024 - Present",
+            "Company_logo": "/assets/images/Genie_AI_Now_Logo_Transparent.png",
+            "Company_link" :"https://www.genieainow.com/genie-a.i-home-page",
+            "Point1": "Pioneered cutting-edge AI/ML innovations by deploying LLM models with Python, Azure, and OpenAI, driving platform efficiency and user engagement.",
+            "Point2": "Automated AI deployment pipelines with Azure DevOps, streamlining CI/CD processes for scalable and reliable AI/ML models.",
+            "Point3": "Optimized model performance by fine-tuning LLMs and leveraging cloud computing for faster inference and reduced latency.",
+            "Point4": " Strengthened system architecture, implementing robust MLOps strategies to enhance AI reliability and scalability.",
+            "Point5": "Spearheaded AI-driven features, integrating advanced NLP and deep learning solutions to enhance user experience and business impact."
+        },
+        {
             "Company_name": "Skill Squirrel",
             "Position": "AI Developer",
             "Time_frame": "September 2024 - December 2024",
