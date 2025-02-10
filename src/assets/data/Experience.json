@@ -4,7 +4,7 @@
         {
             "Company_name": "Skill Squirrel",
             "Position": "AI Developer",
-            "Time_frame": "January 2024 - April 2024",
+            "Time_frame": "September 2024 - December 2024",
             "Company_logo": "/assets/images/Skill-Squirrel-LOGO-hori-PURPLE.png",
             "Company_link" :"https://www.skillsquirrel.com/",
             "Point1": "Revolutionized AI-powered interactions by seamlessly integrating OpenAI’s API with React and Azure, boosting user engagement by 25%.",
@@ -16,7 +16,7 @@
         {
             "Company_name": "Zeuty",
             "Position": "BackEnd Developer",
-            "Time_frame": "June 2024 - Present",
+            "Time_frame": "June 2024 - November 2024",
             "Company_logo": "/assets/images/Zuety_logo.jpeg",
             "Company_link" :"",
             "Point1": "Create and maintain RESTful APIs to support front-end functionalities, ensuring seamless communication between server and client applications.",
