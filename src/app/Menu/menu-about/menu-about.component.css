@@ -75,15 +75,16 @@
 }
 
 .certificate h3 {
-    font-size: 16px; /* Reduce font size */
+    font-size: 14px; /* Reduce font size */
     margin-bottom: 5px;
     color: blue;
-    white-space: nowrap; /* Prevent text wrapping */
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Add "..." when text overflows */
-    width: 100%; /* Ensure it fits inside the box */
-    display: block; /* Ensure it behaves as a block element */
+    white-space: normal; /* Allow text to wrap */
+    overflow-wrap: break-word; /* Ensure long words wrap */
+    word-break: break-word; /* Break long words properly */
+    text-align: center; /* Center text */
+    max-width: 100%; /* Keep text within the box */
 }
+
 
 
 .certificate a {
