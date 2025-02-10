@@ -3,15 +3,15 @@
     "Experience": [
         {
             "Company_name": "Skill Squirrel",
-            "Position": "Junior Software Developer",
+            "Position": "AI Developer",
             "Time_frame": "January 2024 - April 2024",
             "Company_logo": "/assets/images/Skill-Squirrel-LOGO-hori-PURPLE.png",
             "Company_link" :"https://www.skillsquirrel.com/",
-            "Point1": "Led research efforts to utilize new technologies, such as Node.js API and Azure Prompt Flow, to enhance Skill Squirrel's feature integration.",
-            "Point2": "Collaborated within a fully remote team to develop and implement a new feature for Skill Squirrel, leveraging Node.js API and Azure Prompt Flow to streamline user interactions and enhance user experience.",
-            "Point3": "Utilized Jira and GitHub for project management and version control, creating branches and making pull/push requests to ensure code integrity and collaboration.",
-            "Point4": "Managed personal local development environment setup, showcasing autonomy and self-motivation in a remote work setting.",
-            "Point5": "Assisted in generating, evaluating, and analyzing data and reports to ensure accuracy and consistency."
+            "Point1": "Revolutionized AI-powered interactions by seamlessly integrating OpenAI’s API with React and Azure, boosting user engagement by 25%.",
+            "Point2": "Supercharged serverless computing by optimizing Azure Functions, achieving 99.9% uptime and slashing operational costs by 20%.",
+            "Point3": "Engineered intelligent NLP features, elevating chatbot responsiveness and delivering a more human-like user experience.",
+            "Point4": "Enhanced system efficiency through strategic API optimizations, reducing response times and maximizing performance.",
+            "Point5": "Strengthened cloud infrastructure, ensuring scalable, resilient AI models for high-traffic applications."
         },
         {
             "Company_name": "Zeuty",
@@ -24,6 +24,18 @@
             "Point3": "Design, implement, and optimize SQL databases, ensuring data integrity and efficient query performance for robust data handling.",
             "Point4": "Utilize Git for version control, collaborating with team members through branching, merging, and pull requests to manage codebases effectively.",
             "Point5": "Develop and maintain server-side applications using Node.js, ensuring efficient and scalable performance."
+        },
+        {
+            "Company_name": "Skill Squirrel",
+            "Position": "Junior Software Developer",
+            "Time_frame": "January 2024 - April 2024",
+            "Company_logo": "/assets/images/Skill-Squirrel-LOGO-hori-PURPLE.png",
+            "Company_link" :"https://www.skillsquirrel.com/",
+            "Point1": "Led research efforts to utilize new technologies, such as Node.js API and Azure Prompt Flow, to enhance Skill Squirrel's feature integration.",
+            "Point2": "Collaborated within a fully remote team to develop and implement a new feature for Skill Squirrel, leveraging Node.js API and Azure Prompt Flow to streamline user interactions and enhance user experience.",
+            "Point3": "Utilized Jira and GitHub for project management and version control, creating branches and making pull/push requests to ensure code integrity and collaboration.",
+            "Point4": "Managed personal local development environment setup, showcasing autonomy and self-motivation in a remote work setting.",
+            "Point5": "Assisted in generating, evaluating, and analyzing data and reports to ensure accuracy and consistency."
         },
         {
             "Company_name": "Headstarter AI",
